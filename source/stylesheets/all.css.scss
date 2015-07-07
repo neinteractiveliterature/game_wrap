@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+$mustard: #dcb639;
+$off-white: #f2e8d7;
+$cerulean: #388dac;
+$heather: #5f505f;
+$slate: #32404d;
+
+$body-bg: $off-white;
+$jumbotron-padding: 10px;
+$navbar-default-bg: $slate;
+$navbar-default-link-color: $body-bg;
+$navbar-default-link-active-color: $navbar-default-link-color;
+$navbar-default-link-hover-color: $mustard;
+
+$font-family-serif: "TeX Gyre Pagella", Hoefler Text, Georgia, Times New Roman, Times, serif;
+$font-family-base: $font-family-serif;
+$font-size-base: 17px;
+
+@import "bootstrap-sprockets";
+@import "bootstrap-custom";
+
+@import "fonts";
+
+@mixin logo-text {
+  font-family: Metro;
+  font-weight: normal;
+
+  text-align: center;
+  color: $mustard;
+}
+
+.jumbotron {
+  background-color: $heather;
+  margin: 0;
+  border-bottom: 5px $cerulean solid;
+  
+  h1 {
+    @include logo-text;
+  }
+}
+
+.navbar-default .navbar-brand {
+  @include logo-text;
+  width: 75%;
+}
