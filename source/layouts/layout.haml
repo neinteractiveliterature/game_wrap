@@ -6,7 +6,7 @@
     %meta{name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"}
     %title= [current_page.data.title, "Game Wrap"].compact.join(" - ")
     = stylesheet_link_tag "all"
-    = javascript_include_tag  "all"
+    = javascript_include_tag "frontend_development"
 
   %body{class: page_classes}
     .jumbotron.hidden-xs
@@ -20,7 +20,7 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-      
+
           %a.navbar-brand.visible-xs-inline{href: "/"} Game Wrap
 
         .collapse.navbar-collapse#main-navbar-collapse
@@ -28,6 +28,6 @@
             = navbar_item current_page, "Home", "/"
             = navbar_item current_page, "Submissions", "/submissions/"
             = navbar_item current_page, "About Us", "/about/"
-    
+
     .container
       = yield

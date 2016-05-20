@@ -13,6 +13,13 @@ title: Submissions
 
   **The deadline for abstracts for Game Wrap Volume 2 is July 1, 2016.**
 
+#submission-form
+
+:javascript
+  React.render(React.createElement(SubmissionForm), document.getElementById('submission-form'));
+
+%h1 HAML FORM BELOW THIS LINE
+
 %form.form{method: "POST", action: "/submit-abstract.php", "data-validate-required" => true}
 
   .form-group

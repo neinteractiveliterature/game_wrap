@@ -1,0 +1,28 @@
+{
+  "name": "game_wrap_frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./source/javascripts/index.js",
+  "scripts": {
+    "start": "NODE_ENV=development webpack --watch --config webpack.config.js || true",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@vps1.interconlarp.org:game_wrap.git"
+  },
+  "author": "Nat Budin",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "babel-core": "^6.9.0",
+    "babel-eslint": "^6.0.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "fittext": "^1.0.1",
+    "jquery": "^2.2.3",
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2",
+    "webpack": "^1.13.0"
+  }
+}

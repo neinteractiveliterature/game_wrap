@@ -1,6 +1,8 @@
 #= require jquery
 #= require bootstrap-sprockets
+#= require react
 #= require fittext
+#= require submissions
 #= require_self
 
 updateDisplayIfs = ->

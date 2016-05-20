@@ -42,6 +42,12 @@
 
 activate :directory_indexes
 
+activate :external_pipeline,
+  name: :webpack,
+  command: build? ? "npm run build" : "npm start",
+  source: ".tmp/dist",
+  latency: 1
+
 # Methods defined in the helpers block are available in templates
 helpers do
   def navbar_item(current_page, text, url)
@@ -77,7 +83,7 @@ configure :build do
 end
 
 activate :deploy do |deploy|
-  deploy.method = :rsync
+  deploy.deploy_method = :rsync
   deploy.host   = 'vps1.interconlarp.org'
   deploy.path   = '/var/www/gamewrap.interactiveliterature.org'
   # Optional Settings
