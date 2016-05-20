@@ -11,7 +11,7 @@ title: Submissions
 
   For authors whose articles relate to a LARP that they have written, there is the possibility of publishing the LARP materials alongside your essay. We will typically publish 1-2 such LARPs per volume.
 
-  The deadline for abstracts for Game Wrap Volume 2 has not yet been set.
+  **The deadline for abstracts for Game Wrap Volume 2 is July 1, 2016.**
 
 %form.form{method: "POST", action: "/submit-abstract.php", "data-validate-required" => true}
 
@@ -35,18 +35,18 @@ title: Submissions
 
   .form-group
     %label.control-label{for: "submission_type"} Submission type
-    %select#submission_type.form-control{name: "submission_type"}
+    %select#submission_type.form-control{name: "submission_type", "data-display-if-target" => true}
       %option
       %option Essay with accompanying LARP scenario
       %option Article
 
-  .alert.alert-warning
-    %h3 Additional information about LARP submissions
+  .alert.alert-warning{"data-display-if" => "select[name=submission_type] option:selected:contains('LARP')"}
+    %h3{style: 'margin-top: 0'} Additional information about LARP submissions
 
     :markdown
       Game Wrap publishes LARP scenarios in conjunction with an essay concerning the design, writing process, or other topics specifically related to the attached LARP materials (as opposed to, for example, what happened in particular runs of the game).  If an essay discusses multiple LARPs, an article not including the LARP materials may be a better format for publication.
 
-      The LARP is intended to serve as supplemental material to the author’s essay, allowing readers to examine the game being discussed and even play it themselves. We are typically looking for short LARPs that contain everything necessary for play &emdash; including the scenario and all necessary rules.
+      The LARP is intended to serve as supplemental material to the author’s essay, allowing readers to examine the game being discussed. We are typically looking for short LARPs that contain everything necessary for play &mdash; including the scenario and all necessary rules.
 
   .form-group
     %label.control-label{for: "abstract_topic"} Abstract
