@@ -16,9 +16,10 @@ const webpackConfig = {
   },
   output: {
     path: buildPath,
-    filename: '[name]_development.js',
+    filename: '[name].js',
   },
   resolve: {
+    root: __dirname + '/source/javascripts',
     // extensions we don't want to specify when doing module includes
     // (eg. import Foo from 'Foo'; instead of import Foo from 'Foo.jsx';)
     extensions: ['', '.js', '.jsx', '.json'],
@@ -26,11 +27,11 @@ const webpackConfig = {
   },
   module: {
     loaders: [
+      {test: /SubmissionsForm\.jsx$/, loader: 'expose?SubmissionsForm'},
       {test: /\.jsx?$/, loader: 'babel', exclude: [npmModulesPath]},
       // add external libraries to global object (eg. window.React)
       {test: require.resolve('react'), loader: 'expose?React'},
       {test: require.resolve('react-dom'), loader: 'expose?ReactDOM'},
-      {test: require.resolve('jquery'), loader: 'expose?$!expose?jQuery'},
     ],
   },
   plugins: [
@@ -42,7 +43,6 @@ const webpackConfig = {
 };
 
 if (nodeEnv === 'production') {
-  webpackConfig.output.filename = '[name].js';
   // minimize javascript
   webpackConfig.plugins.push(new webpack.optimize.UglifyJsPlugin({
     compress: {warnings: false},

@@ -6,11 +6,11 @@
     %meta{name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"}
     %title= [current_page.data.title, "Game Wrap"].compact.join(" - ")
     = stylesheet_link_tag "all"
-    = javascript_include_tag "frontend_development"
+    = javascript_include_tag "/frontend"
 
   %body{class: page_classes}
     .jumbotron.hidden-xs
-      %h1 Game Wrap
+      %h1#header Game Wrap
 
     %nav.navbar-default
       .container-fluid

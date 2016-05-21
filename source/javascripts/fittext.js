@@ -1,43 +1,62 @@
-/*global jQuery */
 /*!
-* FitText.js 1.2
+* FitText.js 1.0 jQuery free ES6 version
 *
 * Copyright 2011, Dave Rupert http://daverupert.com
 * Released under the WTFPL license
 * http://sam.zoy.org/wtfpl/
+* Modified by Slawomir Kolodziej http://slawekk.info
 *
-* Date: Thu May 05 14:23:00 2011 -0600
+* Date: Tue Aug 09 2011 10:45:54 GMT+0200 (CEST)
 */
+function css(el, prop) {
+  return window.getComputedStyle ? getComputedStyle(el).getPropertyValue(prop) : el.currentStyle[prop];
+}
 
-(function( $ ){
+function addEvent(el, type, fn) {
+  if (el.addEventListener)
+    el.addEventListener(type, fn, false);
+	else
+		el.attachEvent('on'+type, fn);
+}
 
-  $.fn.fitText = function( kompressor, options ) {
+function extend(obj,ext) {
+  for(var key in ext)
+    if(ext.hasOwnProperty(key))
+      obj[key] = ext[key];
+  return obj;
+}
 
-    // Setup options
-    var compressor = kompressor || 1,
-        settings = $.extend({
-          'minFontSize' : Number.NEGATIVE_INFINITY,
-          'maxFontSize' : Number.POSITIVE_INFINITY
-        }, options);
+export default function fitText(el, kompressor, options) {
+  const settings = {
+    minFontSize: -1/0,
+    maxFontSize: 1/0
+  };
+  Object.assign(settings, options);
 
-    return this.each(function(){
+  const compressor = kompressor || 1;
 
-      // Store the object
-      var $this = $(this);
+  const fit = function fit(el) {
+    const resizer = function resizer() {
+      el.style.fontSize = Math.max(Math.min(el.clientWidth / (compressor*10), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize)) + 'px';
+    };
 
-      // Resizer() resizes items based on the object width divided by the compressor * 10
-      var resizer = function () {
-        $this.css('font-size', Math.max(Math.min($this.width() / (compressor*10), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize)));
-      };
+    // Call once to set.
+    resizer();
 
-      // Call once to set.
-      resizer();
-
-      // Call on resize. Opera debounces their resize by default.
-      $(window).on('resize.fittext orientationchange.fittext', resizer);
-
-    });
-
+    // Bind events
+    // If you have any js library which support Events, replace this part
+    // and remove addEvent function (or use original jQuery version)
+    addEvent(window, 'resize', resizer);
   };
 
-})( jQuery );
+  if (Array.isArray(el)) {
+    for (var i=0; i<el.length; i++) {
+      fit(el[i]);
+    }
+  } else {
+    fit(el);
+  }
+
+  // return set of elements
+  return el;
+}
