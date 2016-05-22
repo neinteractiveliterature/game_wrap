@@ -1,0 +1,24 @@
+@import "fonts";
+
+@mixin logo-text {
+  font-family: Metro;
+  font-weight: normal;
+
+  text-align: center;
+  color: $mustard;
+}
+
+.jumbotron {
+  background-color: $heather;
+  margin: 0;
+  border-bottom: 5px $cerulean solid;
+
+  h1 {
+    @include logo-text;
+  }
+}
+
+.navbar-default .navbar-brand {
+  @include logo-text;
+  width: 75%;
+}

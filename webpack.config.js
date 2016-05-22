@@ -12,7 +12,8 @@ const webpackConfig = {
   debug: debugMode,
   devtool: sourceMapType,
   entry: {
-    frontend: './source/javascripts/index',
+    frontend: './source/javascripts',
+    'bootstrap-loader': 'bootstrap-loader'
   },
   output: {
     path: buildPath,
@@ -29,6 +30,15 @@ const webpackConfig = {
     loaders: [
       {test: /SubmissionsForm\.jsx$/, loader: 'expose?SubmissionsForm'},
       {test: /\.jsx?$/, loader: 'babel', exclude: [npmModulesPath]},
+      {test: /\.s?[ca]ss?$/, loader: 'sass'},
+      {
+        test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: "url?limit=10000"
+      },
+      {
+        test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/,
+        loader: 'file'
+      },
       // add external libraries to global object (eg. window.React)
       {test: require.resolve('react'), loader: 'expose?React'},
       {test: require.resolve('react-dom'), loader: 'expose?ReactDOM'},

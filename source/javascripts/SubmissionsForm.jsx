@@ -18,7 +18,7 @@ class SubmissionsForm extends React.Component {
         abstract_larp_info: "",
         other_info: "",
       },
-      missingFields: []
+      missingFields: ['name']
     };
 
     this.onChangeFormElement = this.onChangeFormElement.bind(this);
@@ -26,6 +26,7 @@ class SubmissionsForm extends React.Component {
     this.submisisonIslarp = this.submissionIsLarp.bind(this);
     this.renderLarpSubmissionInfo = this.renderLarpSubmissionInfo.bind(this);
     this.renderLarpInfoField = this.renderLarpInfoField.bind(this);
+    this.renderInputFormGroup = this.renderInputFormGroup.bind(this);
   }
 
   onChangeFormElement(field, event) {
@@ -104,20 +105,40 @@ class SubmissionsForm extends React.Component {
     );
   }
 
+  renderInputFormGroup(fieldName, type, preamble) {
+    let className = "form-group";
+    let errorFeedback = null;
+
+    if (this.state.missingFields.includes(fieldName)) {
+      className += " has-feedback has-error";
+      errorFeedback = (
+        <div>
+          <span data-error-feedback className="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+          <span data-error-feedback className="sr-only">(field is required)</span>
+        </div>
+      );
+    }
+
+    return (
+      <div className={className}>
+        <label className="control-label" htmlFor={fieldName}>{preamble}</label>
+        <input
+          id={fieldName}
+          className="form-control"
+          type={type}
+          name={fieldName}
+          value={this.state.submission.name}
+          onChange={this.onChangeFormElement.bind(this, fieldName)}
+        />
+        {errorFeedback}
+      </div>
+    );
+  }
+
   render() {
     return (
       <form className="form" action="/submit-abstract.php">
-        <div className="form-group">
-          <label className="control-label" htmlFor="name">Your name</label>
-          <input
-            id="name"
-            className="form-control"
-            type="text"
-            name="name"
-            value={this.state.submission.name}
-            onChange={this.onChangeFormElement.bind(this, 'name')}
-          />
-        </div>
+        {this.renderInputFormGroup('name', 'text', 'Your name')}
 
         <div className="form-group">
           <label className="control-label" htmlFor="email">Your email address</label>
