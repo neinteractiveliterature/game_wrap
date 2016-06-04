@@ -18,7 +18,7 @@ class SubmissionsForm extends React.Component {
         abstract_larp_info: "",
         other_info: "",
       },
-      missingFields: ['name']
+      missingFields: []
     };
 
     this.onChangeFormElement = this.onChangeFormElement.bind(this);
@@ -27,6 +27,9 @@ class SubmissionsForm extends React.Component {
     this.renderLarpSubmissionInfo = this.renderLarpSubmissionInfo.bind(this);
     this.renderLarpInfoField = this.renderLarpInfoField.bind(this);
     this.renderInputFormGroup = this.renderInputFormGroup.bind(this);
+    this.renderSelectFormGroup = this.renderSelectFormGroup.bind(this);
+    this.renderTextareaFormGroup = this.renderTextareaFormGroup.bind(this);
+    this.renderFormGroup = this.renderFormGroup.bind(this);
   }
 
   onChangeFormElement(field, event) {
@@ -86,26 +89,66 @@ class SubmissionsForm extends React.Component {
       return null;
     }
 
-    return (
-      <div className="form-group">
-        <p>
-          If you would like us to consider including a LARP you have written to supplement your article, please tell
-          about the accompanying LARP. For instance, describe the scenario, rule system used (if any), number of
-          players, and an approximate idea of how long the written materials for the LARP are.
-        </p>
-        <textarea
-          id="abstract_larp_info"
-          className="form-control"
-          name="abstract_larp_info"
-          rows="6"
-          value={this.state.submission.abstract_larp_info}
-          onChange={this.onChangeFormElement.bind(this, 'abstract_larp_info')}
-        />
-      </div>
+    return this.renderTextareaFormGroup(
+      'abstract_larp_info',
+      "If you would like us to consider including a LARP you have written to supplement your article, please tell " +
+      "about the accompanying LARP. For instance, describe the scenario, rule system used (if any), number of " +
+      "players, and an approximate idea of how long the written materials for the LARP are."
     );
   }
 
   renderInputFormGroup(fieldName, type, preamble) {
+    const content = (
+      <input
+        id={fieldName}
+        className="form-control"
+        type={type}
+        name={fieldName}
+        value={this.state.submission[fieldName]}
+        onChange={this.onChangeFormElement.bind(this, fieldName)}
+      />
+    );
+
+    return this.renderFormGroup(fieldName, preamble, content);
+  }
+
+  renderSelectFormGroup(fieldName, preamble, options) {
+    const optionElements = options.map((option) => {
+      return (<option key={option}>{option}</option>);
+    })
+
+    const content = (
+      <select
+        id={fieldName}
+        className="form-control"
+        name={fieldName}
+        value={this.state.submission[fieldName]}
+        onChange={this.onChangeFormElement.bind(this, fieldName)}
+      >
+        <option></option>
+        {optionElements}
+      </select>
+    );
+
+    return this.renderFormGroup(fieldName, preamble, content);
+  }
+
+  renderTextareaFormGroup(fieldName, preamble) {
+    const content = (
+      <textarea
+        id={fieldName}
+        className="form-control"
+        name={fieldName}
+        rows="6"
+        value={this.state.submission[fieldName]}
+        onChange={this.onChangeFormElement.bind(this, fieldName)}
+      />
+    );
+
+    return this.renderFormGroup(fieldName, preamble, content);
+  }
+
+  renderFormGroup(fieldName, preamble, content) {
     let className = "form-group";
     let errorFeedback = null;
 
@@ -122,14 +165,7 @@ class SubmissionsForm extends React.Component {
     return (
       <div className={className}>
         <label className="control-label" htmlFor={fieldName}>{preamble}</label>
-        <input
-          id={fieldName}
-          className="form-control"
-          type={type}
-          name={fieldName}
-          value={this.state.submission.name}
-          onChange={this.onChangeFormElement.bind(this, fieldName)}
-        />
+        {content}
         {errorFeedback}
       </div>
     );
@@ -139,109 +175,39 @@ class SubmissionsForm extends React.Component {
     return (
       <form className="form" action="/submit-abstract.php">
         {this.renderInputFormGroup('name', 'text', 'Your name')}
-
-        <div className="form-group">
-          <label className="control-label" htmlFor="email">Your email address</label>
-          <input
-            id="email"
-            className="form-control"
-            type="email"
-            name="email"
-            value={this.state.submission.email}
-            onChange={this.onChangeFormElement.bind(this, 'email')}
-          />
-        </div>
-
-        <div className="form-group">
-          <label className="control-label" htmlFor="phone">
-            Your phone number
-            <small> (in case we can't reach you by email)</small>
-          </label>
-          <input
-            id="phone"
-            className="form-control"
-            type="tel"
-            name="phone"
-            value={this.state.submission.phone}
-            onChange={this.onChangeFormElement.bind(this, 'phone')}
-          />
-        </div>
-
-        <div className="form-group">
-          <label className="control-label" htmlFor="title">Title of submission</label>
-          <input
-            id="title"
-            className="form-control"
-            type="text"
-            name="title"
-            value={this.state.submission.title}
-            onChange={this.onChangeFormElement.bind(this, 'title')}
-          />
-        </div>
-
-        <div className="form-group">
-          <label className="control-label" htmlFor="submission_type">Submission type</label>
-          <select
-            id="submission_type"
-            className="form-control"
-            name="submission_type"
-            value={this.state.submission.submission_type}
-            onChange={this.onChangeFormElement.bind(this, 'submission_type')}
-          >
-            <option></option>
-            <option>Essay with accompanying LARP scenario</option>
-            <option>Article</option>
-          </select>
-        </div>
+        {this.renderInputFormGroup('email', 'email', 'Your email address')}
+        {this.renderInputFormGroup('phone', 'tel', (<span>Your phone number <small> (in case we can't reach you by email)</small></span>))}
+        {this.renderInputFormGroup('title', 'text', 'Title of submission')}
+        {this.renderSelectFormGroup('submission_type', 'Submission type', ["Essay with accompanying LARP scenario", "Article"])}
 
         {this.renderLarpSubmissionInfo()}
 
-        <div className="form-group">
-          <label className="control-label" htmlFor="abstract_topic">Abstract</label>
-          <p>
-            A short description of your submission.  Article abstracts should include information about the subject of
-            your article and what you hope to say about it.  LARP abstracts should include a short description of the
-            LARP as well as what you hope to say about it in your author's notes.
-          </p>
-          <p>Please give us a short description of the topic of your article.</p>
-          <textarea
-            id="abstract_topic"
-            className="form-control"
-            name="abstract_topic"
-            rows="6"
-            value={this.state.submission.abstract_topic}
-            onChange={this.onChangeFormElement.bind(this, 'abstract_topic')}
-          />
-        </div>
+        <h3>Abstract</h3>
 
-        <div className="form-group">
-          <p>
-            Please tell us what position you will be taking on that topic, or what the thesis of your article will be.
-          </p>
-          <textarea
-            id="abstract_thesis"
-            className="form-control"
-            name="abstract_thesis"
-            rows="6"
-            value={this.state.submission.abstract_thesis}
-            onChange={this.onChangeFormElement.bind(this, 'abstract_thesis')}
-          />
-        </div>
+        {
+          this.renderTextareaFormGroup(
+            'abstract_topic',
+            "A short description of your submission.  Article abstracts should include information about the subject of " +
+            "your article and what you hope to say about it.  LARP abstracts should include a short description of the " +
+            "LARP as well as what you hope to say about it in your author's notes."
+          )
+        }
 
-        <div className="form-group">
-          <p>
-            Please tell us what method you’ll be using to address your topic (e.g. interviews? literature review?
-            personal essay? analysis of LARP materials? etc.)
-          </p>
-          <textarea
-            id="abstract_methodology"
-            className="form-control"
-            name="abstract_methodology"
-            rows="6"
-            value={this.state.submission.abstract_methodology}
-            onChange={this.onChangeFormElement.bind(this, 'abstract_methodology')}
-          />
-        </div>
+        {
+          this.renderTextareaFormGroup(
+            'abstract_thesis',
+            "Please tell us what position you will be taking on that topic, or what the thesis of your article will be."
+          )
+        }
+
+        {
+          this.renderTextareaFormGroup(
+            'abstract_methodology',
+            "Please tell us what method you’ll be using to address your topic (e.g. interviews? literature review? " +
+            "personal essay? analysis of LARP materials? etc.)"
+          )
+        }
+
 
         {this.renderLarpInfoField()}
 
