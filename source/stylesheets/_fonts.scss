@@ -59,3 +59,42 @@
 
 }
 
+@font-face {
+    font-family: 'Gentium Book Basic';
+    src: url('/fonts/genbkbasb-webfont.woff2') format('woff2'),
+         url('/fonts/genbkbasb-webfont.woff') format('woff'),
+         url('/fonts/genbkbasb.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Gentium Book Basic';
+    src: url('/fonts/genbkbasbi-webfont.woff2') format('woff2'),
+         url('/fonts/genbkbasbi-webfont.woff') format('woff'),
+         url('/fonts/genbkbasbi.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Gentium Book Basic';
+    src: url('/fonts/genbkbasi-webfont.woff2') format('woff2'),
+         url('/fonts/genbkbasi-webfont.woff') format('woff'),
+         url('/fonts/genbkbasi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Gentium Book Basic';
+    src: url('/fonts/genbkbasr-webfont.woff2') format('woff2'),
+         url('/fonts/genbkbasr-webfont.woff') format('woff'),
+         url('/fonts/genbkbasr.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
