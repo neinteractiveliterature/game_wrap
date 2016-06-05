@@ -4,7 +4,7 @@
 @import "fonts";
 @import "mixins";
 
-@import url(https://fonts.googleapis.com/css?family=Raleway:500);
+@import url(https://fonts.googleapis.com/css?family=Raleway:500,500italic);
 
 $body-bg: lighten($off-white, 7%);
 $navbar-default-bg: $slate;
@@ -92,12 +92,16 @@ $headings-font-family: "Raleway";
   margin-right: auto;
   margin-bottom: 50px;
 
+  header {
+    margin-bottom: 20px;
+  }
+
   &.columns {
     @media (min-width: $screen-md) {
       column-count: 2;
       column-gap: 60px;
 
-      header, h1, h2, h3, h4, h5, h6 {
+      header {
         column-span: all;
       }
     }
@@ -111,6 +115,10 @@ $headings-font-family: "Raleway";
   small {
     font-size: $font-size-base;
     line-height: $font-size-base;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 5px;
   }
 }
 

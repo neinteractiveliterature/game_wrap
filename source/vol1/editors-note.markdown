@@ -1,14 +1,17 @@
 ---
 layout: vol1
 content_type: text/html
+title: Editor's Note
 ---
 
-<header class="midline">
-  <div class="midline-line"></div>
-  <h1 class="text-uppercase">Editor's Note</h1>
-</header>
+<header>
+  <div class="midline">
+    <div class="midline-line left"></div>
+    <h1 class="text-uppercase">Editor's Note</h1>
+  </div>
 
-<h2 class="text-uppercase">Esteemed reader!</h2>
+  <h2 class="text-uppercase">Esteemed reader!</h2>
+</header>
 
 Welcome to the inaugural volume of Game Wrap, a magazine devoted to the art and craft of LARP. Please, allow me to introduce myself. I am the magazine’s founder and first Editor-In-Chief (self-appointed, how else?), Viktoriya Fuzaylova. I would like to take up some space here to tell you a little about this publication, how it came into being, and what we, the staff, hope it can be. I want to highlight some of what you can find in this volume and some of the decisions about format that were made during the process of putting it together. Finally, I would like to issue my personal thanks to all those who took this volume from a con-high-fueled fantasy to a glossy-paged reality.
 
