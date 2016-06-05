@@ -2,13 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import fitText from './fittext';
 import SubmissionsForm from './SubmissionsForm';
+import BootstrapNative from 'bootstrap.native';
+import Littlefoot from 'littlefoot';
 
 document.addEventListener("DOMContentLoaded", function(event) {
-  const headerAnchor = document.getElementById('header');
-  if (headerAnchor) {
-    fitText(headerAnchor, 1.1);
+	const Collapses = document.querySelectorAll('[data-toggle="collapse"]'), cll = Collapses.length;
+	for (let i = 0; i<cll;i++) {
+		const item = Collapses[i], options = {};
+		options.duration = item.getAttribute('data-duration');
+		new BootstrapNative.Collapse(item,options);
+	}
+
+  Littlefoot();
+
+  const fitTextElements = document.getElementsByClassName('fittext');
+  for (let i = 0; i < fitTextElements.length; i++) {
+    fitText(fitTextElements[i], 1.1);
   }
-  //$('.jumbotron h1, .navbar-default .navbar-brand').fitText(1.1);
 
   const submissionsFormAnchor = document.getElementById('submissions-form');
   if (submissionsFormAnchor) {

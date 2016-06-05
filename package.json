@@ -27,5 +27,9 @@
     "resolve-url-loader": "^1.4.3",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.0"
+  },
+  "dependencies": {
+    "bootstrap.native": "^1.0.2",
+    "littlefoot": "^1.0.0-alpha.14"
   }
 }

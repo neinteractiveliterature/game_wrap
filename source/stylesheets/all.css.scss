@@ -1,10 +1,8 @@
 @charset "utf-8";
 
-$mustard: #dcb639;
-$off-white: #f2e8d7;
-$cerulean: #388dac;
-$heather: #5f505f;
-$slate: #32404d;
+@import "colors";
+@import "fonts";
+@import "mixins";
 
 $body-bg: $off-white;
 $jumbotron-padding: 10px;
@@ -17,29 +15,10 @@ $font-family-serif: "TeX Gyre Pagella", Hoefler Text, Georgia, Times New Roman, 
 $font-family-base: $font-family-serif;
 $font-size-base: 17px;
 
-@import "fonts";
-@import "bootstrap-sprockets";
 @import "bootstrap-custom";
-
-@mixin logo-text {
-  font-family: Metro;
-  font-weight: normal;
-
-  text-align: center;
-  color: $mustard;
-}
 
 .jumbotron {
   background-color: $heather;
   margin: 0;
   border-bottom: 5px $cerulean solid;
-
-  h1 {
-    @include logo-text;
-  }
-}
-
-.navbar-default .navbar-brand {
-  @include logo-text;
-  width: 75%;
 }

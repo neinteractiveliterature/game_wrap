@@ -1,0 +1,65 @@
+$small-navbar-breakpoint: $screen-md + 100px;
+
+@media (min-width: $screen-sm) {
+  .navbar-collapse {
+    height: auto;
+    border-top: 0;
+    box-shadow: none;
+    max-height: none;
+    padding-left:0;
+    padding-right:0;
+  }
+  .navbar-collapse.collapse {
+    display: block !important;
+    width: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+  .navbar-collapse.in {
+    overflow-x: visible;
+  }
+
+  .navbar
+  {
+  	width: 300px;
+    height: 100%;
+    top: 0;
+    left: 0;
+  	margin-right: 0;
+  	margin-left: 0;
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 0;
+    padding-bottom: 50px;
+
+    @media (max-width: $small-navbar-breakpoint) {
+      width: 200px;
+    }
+  }
+
+  body {
+    margin-left: 305px;
+
+    @media (max-width: $small-navbar-breakpoint) {
+      margin-left: 205px;
+    }
+  }
+
+  .navbar-nav,
+  .navbar-nav > li,
+  .navbar-text,
+  .navbar-left,
+  .navbar-right,
+  .navbar-header
+  {float:none !important;}
+
+  .navbar-right .dropdown-menu {left:0;right:auto;}
+  .navbar-collapse .navbar-nav.navbar-right:last-child {
+      margin-right: 0;
+  }
+
+  .navbar-brand {
+    margin-bottom: 20px;
+  }
+}

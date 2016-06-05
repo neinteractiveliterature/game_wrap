@@ -52,10 +52,21 @@ activate :external_pipeline,
 
 # Methods defined in the helpers block are available in templates
 helpers do
-  def navbar_item(current_page, text, url)
+  def navbar_item(text_or_url, url = nil, &block)
+    if url
+      text = text_or_url
+    else
+      text = nil
+      url = text_or_url
+    end
+
     item_class = (current_page.url == url) ? "active" : ""
     content_tag :li, class: item_class do
-      content_tag :a, text, href: url
+      if text
+        content_tag :a, text, href: url
+      else
+        content_tag :a, href: url, &block
+      end
     end
   end
 end
@@ -63,6 +74,11 @@ end
 set :css_dir, 'stylesheets'
 
 set :images_dir, 'images'
+
+set :markdown_engine, :redcarpet
+set :markdown, :footnotes => true, :smartypants => true, :autolink => true
+
+activate :autoprefixer
 
 # Build-specific configuration
 configure :build do

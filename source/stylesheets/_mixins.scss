@@ -1,0 +1,10 @@
+.logo-text {
+  font-family: Metro;
+  font-weight: normal;
+
+  text-align: center;
+
+  .navbar-default &, .jumbotron & {
+    color: $mustard;
+  }
+}

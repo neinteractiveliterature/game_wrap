@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+@import "colors";
+@import "fonts";
+@import "mixins";
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:500);
+
+$body-bg: lighten($off-white, 7%);
+$navbar-default-bg: $slate;
+$navbar-default-link-color: $body-bg;
+$navbar-default-link-active-color: $navbar-default-link-color;
+$navbar-default-link-hover-color: $mustard;
+$navbar-default-color: $navbar-default-link-color;
+
+$font-family-serif: "Gentium Book Basic", Hoefler Text, Georgia, Times New Roman, Times, serif;
+$font-family-base: $font-family-serif;
+$font-size-base: 17px;
+
+$headings-font-family: "Raleway";
+
+@import "bootstrap-custom";
+@import "sidebar";
+@import "littlefoot/littlefoot";
+
+.midline {
+  display: flex;
+  flex-direction: horizontal;
+  align-items: center;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  .midline-line {
+    height: 2px;
+    background-color: $text-color;
+    flex-grow: 1;
+
+    &.left {
+      margin-right: 20px;
+    }
+
+    &.right {
+      margin-left: 20px;
+    }
+
+    .navbar & {
+      background-color: $navbar-default-color;
+    }
+  }
+
+  .navbar-text {
+    margin-left: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.topline-widget {
+  display: flex;
+  flex-direction: horizontal;
+  align-items: top;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  .left, .right {
+    background-color: $text-color;
+    width: 15px;
+    height: 15px;
+  }
+
+  .center {
+    background-color: $text-color;
+    flex-grow: 1;
+    height: 1px;
+  }
+}
+
+.navbar {
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 20px;
+  }
+}
+
+.content-container {
+  width: calc(100% - 40px);
+  max-width: $screen-md-min;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+
+  &.columns {
+    @media (min-width: $screen-md) {
+      column-count: 2;
+      column-gap: 60px;
+
+      header, h1, h2, h3, h4, h5, h6 {
+        column-span: all;
+      }
+    }
+  }
+}
+
+.article-title {
+  font-family: Raleway;
+  font-size: $font-size-h4;
+
+  small {
+    font-size: $font-size-base;
+    line-height: $font-size-base;
+  }
+}
+
+.frontmatter {
+  @media(min-width: $screen-md) {
+    display: flex;
+    flex-direction: horizontal;
+    align-items: center;
+  }
+
+  .credits {
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    margin-right: 40px;
+
+    @media(min-width: $screen-md) {
+      width: 250px;
+      flex-shrink: 0;
+    }
+
+    @media(max-width: $screen-md - 1) {
+      width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      letter-spacing: 1px;
+      margin: 5px;
+    }
+
+    header {
+      margin-bottom: 40px;
+    }
+
+    footer {
+      margin-top: 40px;
+    }
+
+    section {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .copyright {
+    flex-grow: 1;
+  }
+}
+
+.black-square {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: $text-color;
+}
