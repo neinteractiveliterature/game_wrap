@@ -798,12 +798,12 @@ opponent (who is at 0 Body), and calling "Death" while ending their life
 in some setting appropriate means. Killing someone gives a character an
 immediate Red Token, and causes a permanent Mental Impairment.
 
-[^1]: http://nordiclarp.org/wiki/Nordic\_Larp
+[^1]: http://nordiclarp.org/wiki/Nordic_Larp
 [^2]: http://www.faterpg.com/
 [^3]: http://www.accelerantgames.com/
 [^4]: http://www.drivethrurpg.com/product/56207/Cthulhu-Live-3rd-Edition-LARP
 [^5]: http://nordiclarp.org/wiki/Safewords
-[^6]: http://nordiclarp.org/wiki/Ars\_Amandi
-[^7]: http://nordiclarp.org/wiki/Meta\_Room
+[^6]: http://nordiclarp.org/wiki/Ars_Amandi
+[^7]: http://nordiclarp.org/wiki/Meta_Room
 [^8]: http://nordiclarp.org/wiki/Bleed
 [^9]: http://nordiclarp.org/wiki/Debriefing
