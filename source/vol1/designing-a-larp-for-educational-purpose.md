@@ -4,12 +4,18 @@ content_type: text/html
 title: "Designing a Larp for Educational Purpose: Learning Process and Communication in Graveyard of the Sacrifice"
 ---
 
-<header class="text-center">
+<header class="article-header">
+  <div class="topline-widget">
+    <div class="left"></div>
+    <div class="center"></div>
+    <div class="right"></div>
+  </div>
+
   <div class="article-title">
-    <h1 class="text-uppercase">Designing a Larp for Educational Purpose</h1>
+    <h2 class="text-uppercase">Designing a Larp for Educational Purpose</h2>
     Learning Process and Communication in <em>Graveyard of the Sacrifice</em>
   </div>
-  <em>by Muriel Algayres</em>
+  by Muriel Algayres
 </header>
 
 *Graveyard of the Sacrifice* is an Edularp[^1] which was created and first played in France on the 28th of May 2015. It was designed for 16 English speaking students in an 11th grade  History course. It was presented as “a game about memory, duty, survivors’ guilt and hope for peace"[^2], to explore these themes and our knowledge of World War Two through Larp. More importantly, it was created in a country where Larp is not usually used as a pedagogical tool.
@@ -29,7 +35,7 @@ Although a first-of-its-kind experience, *Graveyard of the Sacrifice* was well r
 
 ### Designing an educational game
 
-Myriam Balzer, in "Learning by playing: Larp as a teaching method", establishes a number of categories in which the organization of an EduLarp falls, some of which appear very specific to this type of endeavor. While *Graveyard *was not created using this framework, it fits most of its requirement, and therefore will be used for analysis purposes.
+Myriam Balzer, in "Learning by playing: Larp as a teaching method", establishes a number of categories in which the organization of an EduLarp falls, some of which appear very specific to this type of endeavor. While *Graveyard* was not created using this framework, it fits most of its requirement, and therefore will be used for analysis purposes.
 
 **Constraints:** The main constraint was connected to time. Classes are usually short (55 minutes, resulting in little more than 45 minutes for effective work), and it is considered best that activities not exceed 20 minutes  so as to not  overtax the students’ attention. The structure of the game would therefore have to be fragmented into small activities, or different scenes, to be effective.
 
@@ -67,7 +73,7 @@ The game was flexible in structure, allowing students to interact freely as the 
 
 The game had been designed for a maximum duration of two hours, but was stopped a bit earlier as fatigue was taking its toll and would have resulted in a probable break from character. A debriefing of about 30 minutes was also run, to assess the students’ impressions and feelings. A week later, a debriefing questionnaire about the whole year was given to assess, among other activities, the game’s performance.
 
-On the day it was run, it appeared that *Graveyard *had completed most of the objectives it set out to do. From a gamification perspective, by being played outside, using costumes, characters, and narrative, it made the school subject into an engaging activity. As a learning game, it enabled the student to research the subject and develop their skills in an active way.
+On the day it was run, it appeared that *Graveyard* had completed most of the objectives it set out to do. From a gamification perspective, by being played outside, using costumes, characters, and narrative, it made the school subject into an engaging activity. As a learning game, it enabled the student to research the subject and develop their skills in an active way.
 
 ### Feedback on the experience: on the advantages of using Edularp
 

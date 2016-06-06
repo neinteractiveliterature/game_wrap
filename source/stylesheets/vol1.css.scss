@@ -12,10 +12,13 @@ $navbar-default-link-color: $body-bg;
 $navbar-default-link-active-color: $navbar-default-link-color;
 $navbar-default-link-hover-color: $mustard;
 $navbar-default-color: $navbar-default-link-color;
+$hr-border: #333;
 
 $font-family-serif: "Gentium Book Basic", Hoefler Text, Georgia, Times New Roman, Times, serif;
 $font-family-base: $font-family-serif;
 $font-size-base: 17px;
+
+$blockquote-font-size: $font-size-base;
 
 $headings-font-family: "Raleway";
 
@@ -77,6 +80,10 @@ $headings-font-family: "Raleway";
     flex-grow: 1;
     height: 1px;
   }
+
+  .article-header & {
+    margin-bottom: 100px;
+  }
 }
 
 .navbar {
@@ -92,6 +99,10 @@ $headings-font-family: "Raleway";
   margin-right: auto;
   margin-bottom: 50px;
 
+  .content-container & {
+    margin-bottom: 12px;
+  }
+
   header {
     margin-bottom: 20px;
   }
@@ -106,11 +117,16 @@ $headings-font-family: "Raleway";
       }
     }
   }
+
+  h3, h4, h5, h6 {
+    margin-bottom: 0;
+  }
 }
 
 .article-title {
   font-family: Raleway;
-  font-size: $font-size-h4;
+  font-size: ($font-size-h3 + $font-size-h4) / 2;
+  line-height: ($font-size-h3 + $font-size-h4) / 2;
 
   small {
     font-size: $font-size-base;
@@ -118,8 +134,14 @@ $headings-font-family: "Raleway";
   }
 
   h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 5px;
+    margin-bottom: 0;
   }
+
+  margin-bottom: 5px;
+}
+
+.article-header {
+  text-align: center;
 }
 
 .frontmatter {
