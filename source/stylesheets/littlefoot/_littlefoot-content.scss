@@ -35,9 +35,6 @@
   transition-timing-function: $popover-transition-default-timing-function;
   z-index: $popover-z-index;
 
-  // multi-column support
-  column-span: 2;
-
   &.is-positioned-top {
     top: auto;
     bottom: 0;
@@ -147,8 +144,7 @@
 // additional content on scrollable popovers.
 
 .littlefoot-footnote__wrapper {
-  // This is breaking in multi-column layouts
-  // position: relative;
+  position: relative;
 
   // Above the outer tooltip, below the inner tooltip
   z-index: ($popover-z-index + 4);
@@ -167,8 +163,7 @@
 // element and bottom margin on the last child.
 
 .littlefoot-footnote__content {
-  // This is breaking in multi-column layouts
-  // position: relative;
+  position: relative;
 
   z-index: ($popover-z-index - 2); // Below fading bars
   display: inline-block;

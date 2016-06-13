@@ -34,5 +34,5 @@ content_type: text/html
           %ul.nav.navbar-nav
             = partial "layouts/vol1_navbar"
 
-    .content-container{class: current_page.data.columns == false ? '' : 'columns'}
+    .content-container
       = yield

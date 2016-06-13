@@ -76,7 +76,7 @@ set :css_dir, 'stylesheets'
 set :images_dir, 'images'
 
 set :markdown_engine, :redcarpet
-set :markdown, :footnotes => true, :smartypants => true, :autolink => true
+set :markdown, :footnotes => true, :smartypants => true, :autolink => true, :superscript => true
 
 activate :autoprefixer
 

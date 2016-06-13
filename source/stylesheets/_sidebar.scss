@@ -39,7 +39,7 @@ $small-navbar-breakpoint: $screen-md + 100px;
   }
 
   body {
-    margin-left: 305px;
+    margin-left: 300px;
 
     @media (max-width: $small-navbar-breakpoint) {
       margin-left: 205px;
