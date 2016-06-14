@@ -328,3 +328,10 @@ figure {
     }
   }
 }
+
+.document-separator {
+  text-align: center;
+  margin-top: 60px;
+  border-top: 1px $text-color solid;
+  padding-top: 10px;
+}
