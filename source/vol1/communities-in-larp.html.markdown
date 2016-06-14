@@ -387,7 +387,7 @@ LARP community?*
 I’m very grateful to Jesse, Aaron, Diana, Adrianne, and Joel for
 allowing themselves to be interviewed!
 
-Community is an often underlooked aspect of LARP, but an element just as
+Community is an often overlooked aspect of LARP, but an element just as
 important as setting, mechanics and logistics. Cultivating a positive
 and uplifting community is key to a game’s long-term survival. Whether
 you’ve just started a game, are in the planning process to begin a
