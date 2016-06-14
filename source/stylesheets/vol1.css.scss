@@ -294,3 +294,37 @@ img.editors-note-portrait {
   height: auto;
   margin: 20px;
 }
+
+figure {
+  padding: 5px;
+
+  figcaption {
+    font-style: italic;
+    font-size: $font-size-small;
+
+    &.table-caption {
+      border-top: 1px solid $table-border-color;
+    }
+  }
+
+  .table-data {
+    margin-bottom: 0;
+
+    > tbody > tr > td, > thead > tr > th {
+      vertical-align: middle;
+      text-align: center;
+
+      &:first-child {
+        text-align: inherit;
+      }
+    }
+
+    > tbody > tr > td {
+      white-space: nowrap;
+
+      &:first-child {
+        white-space: inherit;
+      }
+    }
+  }
+}
