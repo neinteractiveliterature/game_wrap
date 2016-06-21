@@ -96,7 +96,7 @@ for them. The fact that the players must do all of this themselves adds
 to their emotional buy-in and raises the stakes.
 
 A good example of this is a module from *Mirror Mirror* (Chimera
-Entertainment, Inc.),^1 wherein the player-characters were looking to
+Entertainment, Inc.),[^1] wherein the player-characters were looking to
 break open some eggs and avoid the wrath of the blind guardians who
 stood vigilant over the characters’ objective. The intention was to
 avoid any detection, as the player-characters knew that any detection
@@ -140,7 +140,7 @@ to them or suffer the consequences. They’re forced to think critically
 and speak quickly and charismatically.
 
 A good example of one of these sorts of modules was seen in *Shadows of
-Amun* (Older than Dirt Games, May 2015).^2 Some player-characters were
+Amun* (Older than Dirt Games, May 2015).[^2] Some player-characters were
 brought into a group which devoted itself to protecting the Pharaoh
 during the reign of Cleopatra. Some of the player-characters’ superiors
 brought them in to add insight to a debate regarding whether or not
@@ -174,7 +174,7 @@ safety.
 </div>
 
 Another particularly humorous example comes from *Cottington Woods*
-(Mangio and Mangio, September 2015),^3 a fairytale-inspired game. In a
+(Mangio and Mangio, September 2015),[^3] a fairytale-inspired game. In a
 plotline surrounding the kidnapping of children, Peter Pan approached
 the player-characters claiming that the dastardly Hook must be
 responsible. The player-characters, having been hoodwinked by Pan
@@ -222,7 +222,7 @@ involved. They also allow player-characters to push their agendas while
 perhaps breaking into different plots that interest them or help their
 friends if they are more socially inclined.
 
-*Cottington Woods* (Mangio and Mangio, January 2015)^4 presented a
+*Cottington Woods* (Mangio and Mangio, January 2015)[^4] presented a
 particularly memorable example of this when they did a whole one-day
 event surrounding the Fairy Mist Ball, an event that touched all
 masquerades across time. This meant that player-characters could meet
@@ -235,12 +235,12 @@ clothing and expand their character’s perceived image and wardrobe for a
 formal event.
 
 Several events have done more casual town fair-type modules. In an
-*Occam’s Razor* (Darksteel Games, November 2014)^5 event, they managed
+*Occam’s Razor* (Darksteel Games, November 2014)[^5] event, they managed
 to balance an atmosphere where one could participate in silly games to
 win prizes, but also speak to a creepy blind psychic who seemed to have
 individual insight memorized for each player-character. The feel of a
 small-town New Hampshire atmosphere was highlighted while preserving the
-horrific undertones of the game. *Seven Virtues* (Caruso)^6 managed to
+horrific undertones of the game. *Seven Virtues* (Caruso)[^6] managed to
 create a captivatingly immersive atmosphere with their Dark Circus event
 that brought interesting plot hooks to characters while giving an
 experience that one player described as “walking into another world and
@@ -276,7 +276,7 @@ strange settings involve puzzles connected to the esoteric concepts of
 the dream, or simply have the players experience a tense or emotional
 scene.
 
-*Shadows of Amun* (Older than Dirt Games, October 2013)^7 gave a
+*Shadows of Amun* (Older than Dirt Games, October 2013)[^7] gave a
 particularly powerful example of setting a scene to cause an emotional
 reaction in their players. During a gathering of a mystical group of
 player-characters and their Elders to tell stories, a God was summoned
@@ -293,7 +293,7 @@ had experienced. The module did not offer any kind of closure, but it
 was incredibly immersive in the creeping realization that fighting back
 was pointless and they could not hope to beat it.
 
-*Endgame* (Black Crayon Games)^8 took a different tack at evoking
+*Endgame* (Black Crayon Games)[^8] took a different tack at evoking
 strong emotion by asking several characters to sacrifice memories and
 parts of themselves in one plotline. This was done through “mind-dives,”
 modules where a few player-characters entered another character’s mind.
@@ -331,7 +331,7 @@ non-combat roles. Putting effort into including complicated and
 immersive non-combat facets in combat modules can round out immersion in
 all parts of the game.
 
-For example, *Rabbit Run* (Eddy et al.)^9 uses a clever hacking
+For example, *Rabbit Run* (Eddy et al.)[^9] uses a clever hacking
 technique that is very resonant with the cyberpunk genre they are
 embodying. While most of the game is very combat-heavy, there are some
 characters who are focused on hacking, which is represented by tape set
@@ -343,7 +343,7 @@ the fact that the puzzles they are working on are physically
 representative of what they are doing adds to the ease of immersion
 already created by the emotional stakes.
 
-*Occam’s Razor* (Darksteel Games)^10 has a similarly impressive
+*Occam’s Razor* (Darksteel Games)[^10] has a similarly impressive
 representation of their technology. As a modern game with cyberpunk
 elements, incorporating technology into their game is important to
 maintain their genre. To this end, one of the staff members has written
@@ -436,3 +436,14 @@ established conventions, and create exciting new adventures.
 8. *Endgame by Black Crayon Games.* Produced by Black Crayon Games. Greenfield, NH. 2010-2012. Production of live action role play game.
 9. Zoe Eddy, Albert Lin, Scott Sawyer, Chris Wilkins, Ben Jones, Jeff Holmes, Anthony Reed. *Rabbit Run*. 2014. Live action role play game.
 10. *Occam’s Razor by Darksteel Games.* Produced by Darksteel Games. Windsor, NH. Live action role play game.
+
+[^1]: *Mirror Mirror by Chimera Entertainment, Inc.* Produced by Chimera Entertainment Inc. Brookfield, MA. November 2012. Production of live action role play game.
+[^2]: *Shadows of Amun by Older Than Dirt Games*. Produced by Older Than Dirt Games. Westford, MA. May 2015. Production of live action role play game.
+[^3]: *Cottington Woods by Michelle and John Mangio.* Produced by Michelle and John Mangio. Brookfield, MA. September 2015. Production of live action role play game.
+[^4]: *Cottington Woods by Michelle and John Mangio*. Produced by Michelle and John Mangio. Brookfield, MA. January 2015. Production of live action role play game.
+[^5]: *Occam’s Razor by Darksteel Games.*  Produced by Darksteel Games. Windsor, NH. November 2014. Production of live action role play game.
+[^6]: *Seven Virtues by Melissa Caruso.* Produced by Melissa Caruso. Ashby, MA. Production of live action role play game.
+[^7]: *Shadows of Amun by Older Than Dirt Games.* Produced by Older Than Dirt Games. Westford, MA. October 2013. Production of live action role play game.
+[^8]: *Endgame by Black Crayon Games.* Produced by Black Crayon Games. Greenfield, NH. 2010-2012. Production of live action role play game.
+[^9]: Zoe Eddy, Albert Lin, Scott Sawyer, Chris Wilkins, Ben Jones, Jeff Holmes, Anthony Reed. *Rabbit Run*. 2014. Live action role play game.
+[^10]: *Occam’s Razor by Darksteel Games.* Produced by Darksteel Games. Windsor, NH. Live action role play game.
