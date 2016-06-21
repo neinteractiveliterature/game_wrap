@@ -63,9 +63,9 @@ Where can you find pre-written games? There are three basic options:
 purchase, online lists, and approaching individual GMs.
 
 There are several sites selling commercially published theatre-style
-larps. DriveThruRPG lists over twenty scattered across its “larp” and
-“Live-Action Roleplaying” categories. The UK-based Freeform Games has
-almost thirty, while Peaky Games and Paracelsus Games each have a
+larps. [DriveThruRPG](http://www.drivethrurpg.com/) lists over twenty scattered across its “larp” and
+“Live-Action Roleplaying” categories. The UK-based [Freeform Games](http://www.freeformgames.com/our_games.php) has
+almost thirty, while [Peaky Games](http://peakygames.wikidot.com/buy-our-games) and [Paracelsus Games](http://www.paracelsus-games.com/theatrical-experiences/) each have a
 handful. Pricing is highly variable. On DriveThruRPG larps range from
 “pay what you want” to US$12, with most in the US$5 - $10 range.
 Peaky Games charge a flat £5. Paracelsus is more expensive, with its
@@ -77,8 +77,8 @@ larpers.
 
 There are also a large number of larps available for free on various
 internet sites. A collection of links to these is maintained at the
-RPG.net Wiki. NEIL runs an online Larp Library. More recently, an
-“International LARP Exchange Project” has been established with the
+[RPG.net Wiki](http://wiki.rpg.net/index.php/LARP_Scenarios). NEIL runs an online [Larp Library](http://library.interactiveliterature.org/). More recently, an
+[“International LARP Exchange Project”](https://www.facebook.com/groups/116297192053019/) has been established with the
 explicit goal of sharing games between the major US, UK, and New Zealand
 conventions. At the time of writing they are building lists of available
 games, both published and available upon request from GMs; by the time
@@ -244,10 +244,9 @@ writer, what can you do to encourage other people to run your game?
 The first and most obvious step is of course *make your larp available*.
 You don’t have to commercially publish it, but you can just stick it on
 the web by sharing it in Google Drive, hitting the “publish” button on
-Larpwriter, or even uploading it to Larp Library. Or you can let people
+[Larpwriter](http://www.larpwriter.com/en/), or even uploading it to [Larp Library](http://library.interactiveliterature.org). Or you can let people
 know you will supply it upon request, either by word of mouth in your
-local community or more formally through the International LARP Exchange
-Project.
+local community or more formally through the [International LARP Exchange Project](https://www.facebook.com/groups/116297192053019/).
 
 Apart from availability, the next step is to make it easy for people to
 run by *writing down everything you need to run the game*. This means
@@ -256,7 +255,7 @@ casting advice, setup information, runtime guidance, plot summary, a
 printing and stuffing guide (what to print, and what to put in each
 envelope), a blurb, and anything else you think a GM might need to know.
 Trenti (153–159) has a good guide, or alternatively you can look at
-what’s provided in the average game from Peaky or Freeform Games. If
+what’s provided in the average game from [Peaky](http://peakygames.wikidot.com/buy-our-games) or [Freeform Games](http://www.freeformgames.com/our_games.php). If
 you’ve done this a couple of times, you can simply incorporate it into
 your writing process, and it becomes a discipline, a way of getting the
 information straight for yourself as well as future GMs.
