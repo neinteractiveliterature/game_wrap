@@ -1,7 +1,7 @@
 ---
 layout: vol1
 content_type: text/html
-title: "Designing a Larp for Educational Purpose: Learning Process and Communication in Graveyard of the Sacrifice"
+title: "Designing a Larp for Educational Purposes: Learning Process and Communication in Graveyard of the Sacrifice"
 ---
 
 <header class="article-header">
@@ -12,7 +12,7 @@ title: "Designing a Larp for Educational Purpose: Learning Process and Communica
   </div>
 
   <div class="article-title">
-    <h2 class="text-uppercase">Designing a Larp for Educational Purpose</h2>
+    <h2 class="text-uppercase">Designing a Larp for Educational Purposes</h2>
     Learning Process and Communication in <em>Graveyard of the Sacrifice</em>
   </div>
   by Muriel Algayres
