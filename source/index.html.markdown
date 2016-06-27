@@ -6,9 +6,11 @@ title: Welcome
 
 Game Wrap is a yearly publication focusing on the art and craft of live action roleplaying games. We hope to allow for a more fluid exchange of ideas and experience, and wider opportunities for learning from each other.
 
-Game Wrap will be released online in pdf format as well as in hard copy on demand. We publish articles about larp theory and practice - the process of writing and running games as well as playing in them. We also publish analyses of larp as an art form, educational or therapeutic tool, and recreation. We will include one or two full texts of larps in each issue, accompanied by the author’s reflective essay. All forms and traditions of larp are welcome.
+Game Wrap is released online in HTML and PDF formats as well as in hard copy on demand. We publish articles about larp theory and practice - the process of writing and running games as well as playing in them. We also publish analyses of larp as an art form, educational or therapeutic tool, and recreation. We will include one or two full texts of larps in each issue, accompanied by the author’s reflective essay. All forms and traditions of larp are welcome.
 
-We're currently in the process of creating our first issue.  If you'd like to be notified when it's ready, please sign up for our mailing list below!
+# Volume 1 Is Available!
+
+We're pleased to announce that Game Wrap Volume 1 is now available for online reading, PDF download and hard copy purchase!  [To read Game Wrap Volume 1, go here.](/vol1)
 
 <!-- Begin MailChimp Signup Form -->
 <div id="mc_embed_signup" class="panel panel-default" style="margin-top: 2em">

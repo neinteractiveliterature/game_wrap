@@ -13,6 +13,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		new BootstrapNative.Collapse(item,options);
 	}
 
+  const Dropdowns = document.querySelectorAll('[data-toggle=dropdown]'), ddl = Dropdowns.length;
+  for (let i = 0; i<ddl; i++) {
+    new BootstrapNative.Dropdown(Dropdowns[i]);
+  }
+
   Littlefoot();
 
   const fitTextElements = document.getElementsByClassName('fittext');
