@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+@import "colors";
+@import "fonts";
+@import "mixins";
+
+$vol2-teal: #42B4AC;
+$vol2-indigo: #47497E;
+$vol2-mint: #dceddd;
+
+$body-bg: desaturate(lighten($vol2-mint, 9%), 10%);
+$navbar-default-bg: $vol2-indigo;
+$navbar-default-link-color: $body-bg;
+$navbar-default-link-active-color: $navbar-default-link-color;
+$navbar-default-link-hover-color: $vol2-mint;
+$navbar-default-color: $navbar-default-link-color;
+$hr-border: #333;
+
+$brand-danger: $vol2-teal;
+
+$font-family-serif: "Gentium Book Basic", Hoefler Text, Georgia, Times New Roman, Times, serif;
+$font-family-base: $font-family-serif;
+$font-size-base: 17px;
+
+$blockquote-font-size: $font-size-base;
+
+$headings-font-family: "Raleway";
+
+@import "bootstrap-custom";
+@import "sidebar";
+@import "littlefoot/littlefoot";
+
+@import "book_common";
+
+.navbar-default .logo-text {
+  color: white;
+  text-shadow: 3px 3px 0 $vol2-teal;
+}
+
+img.text-clip {
+  &.a-time-to-not-kill-dead-man {
+    width: 170%;
+    float: right;
+    margin-right: -100%;
+    shape-outside: image-url('/vol1/images/a-time-to-not-kill-dead-man.png');
+  }
+
+  &.harnessing-the-glowing-rectangle-circuit {
+    float: left;
+    margin-left: -44%;
+    shape-outside: image-url('/vol1/images/harnessing-the-glowing-rectangle-circuit.png');
+  }
+
+  &.running-out-of-the-box-index-box {
+    width: 65%;
+    float: right;
+    margin-right: -13%;
+    shape-outside: image-url('/vol1/images/running-out-of-the-box-index-box.png');
+  }
+
+  &.running-out-of-the-box-chest {
+    width: 111%;
+    float: left;
+    margin-left: -8%;
+    shape-outside: image-url('/vol1/images/running-out-of-the-box-chest.png');
+  }
+
+  &.secrecy-in-intercon-style-larp-envelope {
+    width: 86%;
+    float: left;
+    margin-left: -27%;
+    shape-outside: image-url('/vol1/images/secrecy-in-intercon-style-larp-envelope.png');
+  }
+
+  &.secrecy-in-intercon-style-larp-spoiler-alert-sign {
+    width: 50%;
+    float: right;
+    margin-right: -15%;
+    shape-outside: image-url('/vol1/images/secrecy-in-intercon-style-larp-spoiler-alert-sign.png');
+  }
+}

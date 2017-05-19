@@ -1,0 +1,79 @@
+---
+layout: vol2
+columns: false
+---
+
+%header{style: "margin-bottom: 40px"}
+  .topline-widget
+    .left
+    .center
+    .right
+
+  .logo-text.fittext Game Wrap
+
+.frontmatter
+  %aside.credits
+    %header
+      .black-square
+
+    %section
+      %h4 Editor in Chief
+      Viktoriya Fuzaylova
+
+    %section
+      %h4 Editorial Board
+      %ul.list-unstyled
+        %li Viktoriya Fuzaylova
+        %li Stephen Kohler
+        %li Brian Richburg
+        %li Phoebe Roberts
+        %li Adina Schreiber
+
+    %section
+      %h4 Author Liaison
+      Brian Richburg
+
+    %section
+      %h4 Copy Editors
+      %ul.list-unstyled
+        %li Phoebe Roberts
+        %li Tegan Kehoe
+
+    %section
+      %h4 Layout Designer
+      Kathleen De Smet
+
+    %section
+      %h4 Webmaster
+      Nat Budin
+
+    %footer
+      .black-square
+
+  .copyright
+    %p
+      Game Wrap Volume 2 is Copyright &copy; 2017 by New England Interactive Literature.  Copyrights to individual articles and larps herein remain with their respective authors.
+
+    %p
+      This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit
+      = succeed "." do
+        = link_to "http://creativecommons.org/licenses/by-sa/4.0/", "http://creativecommons.org/licenses/by-sa/4.0/"
+
+    = image_tag "/vol1/images/cc.logo.svg", alt: "Creative Commons", class: "img-responsive", style: 'margin-bottom: 50px'
+
+    %p{style: 'margin-top: 50px'}
+      New England Interactive Literature
+      %br
+      c/o Chad Bergeron
+      %br
+      258 Edgell Road
+      %br
+      Framingham, MA 01701
+
+%footer{style: "margin-top: 40px"}
+  .midline
+    .midline-line.left
+    %div{style: "width: 50%"}
+      %h3.fittext{style: "width: 57%"}
+        = link_to "http://gamewrap.interactiveliterature.org", "http://gamewrap.interactiveliterature.org"
+    .midline-line.right
