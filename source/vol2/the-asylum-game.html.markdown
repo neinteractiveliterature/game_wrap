@@ -1,17 +1,11 @@
 ---
-layout: vol2
+layout: vol2-the-asylum-game
 content_type: text/html
 title: "The Asylum Game"
 columns: false
 ---
 
 <header class="article-header">
-  <div class="topline-widget">
-    <div class="left"></div>
-    <div class="center"></div>
-    <div class="right"></div>
-  </div>
-
   <div class="article-title">
     <h2 class="text-uppercase">The Asylum Game</h2>
   </div>
@@ -78,27 +72,17 @@ Interpret the descriptions as you see best. Make a mark for the
 conditions that apply to you. Cross the condition out once it has been
 used up.
 
-2\) Your country is red-listed (describe why) 3D6
-
-3\) You have a job offer (what?) 3D6
-
-4\) University degree (describe what) 2D6
-
-5\) Already have a lawyer (how did that happen?) 2D6
-
-6\) Professional (what did you do for a living?) 1D6
-
-7\) Knowledge of your rights 1D6
-
-8\) You are rich (what did this mean where you came from?) 1D6
-
-9\) Persecuted minority (which? Why are you persecuted?) 2D6
-
-10\) Your country is yellow-listed (describe why) 2D6
-
-11\) Media is aware of your story (what is it?) 3D6
-
-12\) Married to a citizen (how did that happen?) 3D6
+* 2\) Your country is red-listed (describe why) 3D6
+* 3\) You have a job offer (what?) 3D6
+* 4\) University degree (describe what) 2D6
+* 5\) Already have a lawyer (how did that happen?) 2D6
+* 6\) Professional (what did you do for a living?) 1D6
+* 7\) Knowledge of your rights 1D6
+* 8\) You are rich (what did this mean where you came from?) 1D6
+* 9\) Persecuted minority (which? Why are you persecuted?) 2D6
+* 10\) Your country is yellow-listed (describe why) 2D6
+* 11\) Media is aware of your story (what is it?) 3D6
+* 12\) Married to a citizen (how did that happen?) 3D6
 
 ### Officer
 
@@ -111,25 +95,14 @@ descriptions as you see best. Make a mark for the conditions that apply
 to you. Cross the condition out once it has been used up (i.e. used in a
 scene).
 
-2\) You simply don’t have the right documentation 4D6
-
-3\) You first landed in this other western country, you need to go back
-to ask for asylum there 4d6
-
-4\) You didn’t file the proper forms before 3D6
-
-5\) Our database has no info on that 2D6
-
-6\) You are exaggerating 1D6
-
-7\) Look, I’m only doing my job 1D6
-
-8\) That’s above my pay grade 1D6
-
-9\) Legally, that doesn’t matter 2D6
-
-10\) You didn’t file the proper forms before 3D6
-
-11\) The person who could help you is on vacation 3D6
-
-12\) We don’t recognize the documentation that you do have 4D6
+* 2\) You simply don’t have the right documentation 4D6
+* 3\) You first landed in this other western country, you need to go back to ask for asylum there 4d6
+* 4\) You didn’t file the proper forms before 3D6
+* 5\) Our database has no info on that 2D6
+* 6\) You are exaggerating 1D6
+* 7\) Look, I’m only doing my job 1D6
+* 8\) That’s above my pay grade 1D6
+* 9\) Legally, that doesn’t matter 2D6
+* 10\) You didn’t file the proper forms before 3D6
+* 11\) The person who could help you is on vacation 3D6
+* 12\) We don’t recognize the documentation that you do have 4D6

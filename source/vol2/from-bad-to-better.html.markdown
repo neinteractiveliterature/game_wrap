@@ -204,6 +204,8 @@ games are enjoyable. Indeed, by the traditional standards of secrets and
 powers larps, most of the 10 Bad LARPs games would be considered
 failures.
 
+<img class="text-clip from-bad-to-better-wastebasket" src="/vol2/images/from-bad-to-better-wastebasket.png" />
+
 There must, therefore, be something else making these games enjoyable to
 play. From my own observations of running 10 Bad LARPs games, there are
 three major factors that seem to make a difference for players.

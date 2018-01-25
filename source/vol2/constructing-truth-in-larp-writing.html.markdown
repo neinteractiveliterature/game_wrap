@@ -136,6 +136,24 @@ use a major part of her character during game. This is related to how,
 in any story, if we’re told that a character is exceptional in some way,
 we expect them to be able to use this to accomplish things in the story.
 
+<div class="pull-quote right">
+  <div class="topline-widget">
+    <div class="left"></div>
+    <div class="center"></div>
+    <div class="right"></div>
+  </div>
+
+  <p>
+    If Yukiko is the world’s greatest swordswoman and there’s no combat mechanic, then her player doesn’t have the ability to use a major part of her character.
+  </p>
+
+  <div class="bottomline-widget">
+    <div class="left"></div>
+    <div class="center"></div>
+    <div class="right"></div>
+  </div>
+</div>
+
 Mechanical support disconnects can lead to immersion problems, as well.
 Other players form expectations about what a character should be able to
 do and when they’ll be useful. For example, if someone’s attacking

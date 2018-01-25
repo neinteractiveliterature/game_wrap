@@ -58,6 +58,8 @@ Gun”), choosing to incorporate adjunct crew into your game gives you a
 powerful tool that can and should be used in meaningful ways in the
 design.
 
+<img class="text-clip chekovs-crew-hats" src="/vol2/images/chekovs-crew-hats.png" />
+
 There are some overseas games I’ve seen that use different PC/NPC
 models: for instance, horde games such as *Victoria Junction—All change
 please, all change*! (Barnard et al.) use the structure of a small group
@@ -458,6 +460,8 @@ Cohen, Daphne. Private email. Sent 17 Jun. 2014.
 
 Dowsett, Jenni. *The Silver Kiss of the Magical Twilight of the Full
 Moon*. 2011. Live action roleplaying game.
+
+<img class="text-clip chekovs-crew-cyber" src="/vol2/images/chekovs-crew-cyber.png" />
 
 “GMs are bastards.” *Diatribe*, http://diatribe.co.nz/t/gms-are-bastards/7387.
 Accessed 6 May 2017.

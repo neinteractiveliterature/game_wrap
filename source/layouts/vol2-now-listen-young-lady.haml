@@ -36,5 +36,18 @@ content_type: text/html
           %ul.nav.navbar-nav
             = partial "layouts/vol2_navbar"
 
+    %header.article-header{ style: 'position: relative;' }
+      %img{src: image_path("/vol2/images/now-listen-young-lady-faces.png")}
+
+      %div{style: 'position: absolute; bottom: 1%; width: 100%;'}
+        .article-title
+          %h2.text-uppercase{style: 'text-shadow: 0 0 2px white;'}
+            Now
+            %br
+            Listen
+            %br
+            Young Lady!
+        by Susanne Vejdemo
+
     .content-container
       = yield

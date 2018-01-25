@@ -163,6 +163,24 @@ may never have thought of otherwise, keeping things fresh, and perhaps
 even suggesting ideas to incorporate into the game’s canon to improve
 future runs.
 
+<div class="pull-quote left">
+  <div class="topline-widget">
+    <div class="left"></div>
+    <div class="center"></div>
+    <div class="right"></div>
+  </div>
+
+  <p>
+    Because of the unpredictable and individual natures of so many contributors, each run of the game may end up with a different variation of the story.
+  </p>
+
+  <div class="bottomline-widget">
+    <div class="left"></div>
+    <div class="center"></div>
+    <div class="right"></div>
+  </div>
+</div>
+
 Because of all these factors, many game writers and runners conclude
 that player autonomy to act as they choose is a good in and of itself.
 Some players, of course, actively desire to be autonomous and feel like
@@ -378,6 +396,24 @@ other players a chance to take their own actions that might be prevented
 if others’ actions impact them right way. Structure comes from not just
 which events occur, but when they occur, so even subtle rearranging of
 event sequences can have a meaningful effect.
+
+<div class="pull-quote right">
+  <div class="topline-widget">
+    <div class="left"></div>
+    <div class="center"></div>
+    <div class="right"></div>
+  </div>
+
+  <p>
+    The right sort of player can be informed ahead of time what certain arcs are supposed to be, so they can choose to take actions that best serve them.
+  </p>
+
+  <div class="bottomline-widget">
+    <div class="left"></div>
+    <div class="center"></div>
+    <div class="right"></div>
+  </div>
+</div>
 
 The last line of defense can be tipping players off to the needs of the
 story, allowing them the information necessary to take structure into
