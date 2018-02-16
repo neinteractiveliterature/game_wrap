@@ -44,8 +44,7 @@ Feel free to adapt it!
 #### 2010s
 
 * You have to take down the naked pictures from online
-* You can’t have an open relationship and multiple partners - love is
-* about commitment.
+* You can’t have an open relationship and multiple partners - love is about commitment.
 * Bodypaint is not clothes!
 * You can’t neglect your studies to spend time with some boy! Or girl!
 * You can’t get engaged to someone you’ve only known for a few months! You need to play the field and get experience.
