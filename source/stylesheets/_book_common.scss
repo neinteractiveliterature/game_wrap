@@ -138,6 +138,18 @@ body {
   text-align: center;
 }
 
+.xs-toc {
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  font-size: 90%;
+
+  .article-title {
+    font-size: $font-size-h4;
+    line-height: $font-size-h4;
+  }
+}
+
 .frontmatter {
   @media(min-width: $screen-md) {
     display: flex;
@@ -149,6 +161,7 @@ body {
     background-color: rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 20px;
+    margin: 20px;
     margin-right: 40px;
 
     @media(min-width: $screen-md) {
