@@ -173,7 +173,7 @@ class SubmissionsForm extends React.Component {
 
   render() {
     return (
-      <form className="form" action="/submit-abstract.php">
+      <form className="form" method="POST" action="/submit-abstract.php">
         {this.renderInputFormGroup('name', 'text', 'Your name')}
         {this.renderInputFormGroup('email', 'email', 'Your email address')}
         {this.renderInputFormGroup('phone', 'tel', (<span>Your phone number <small> (in case we can't reach you by email)</small></span>))}
