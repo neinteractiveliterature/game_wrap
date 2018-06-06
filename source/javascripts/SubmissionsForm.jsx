@@ -182,12 +182,12 @@ class SubmissionsForm extends React.Component {
 
         {this.renderLarpSubmissionInfo()}
 
-        <h3>Abstract</h3>
+        <h3>Summary</h3>
 
         {
           this.renderTextareaFormGroup(
             'abstract_topic',
-            "A short description of your submission.  Article abstracts should include information about the subject of " +
+            "A short description of your submission.  Article summaries should include information about the subject of " +
             "your article and what you hope to say about it.  LARP abstracts should include a short description of the " +
             "LARP as well as what you hope to say about it in your author's notes."
           )
@@ -196,7 +196,7 @@ class SubmissionsForm extends React.Component {
         {
           this.renderTextareaFormGroup(
             'abstract_thesis',
-            "Please tell us what position you will be taking on that topic, or what the thesis of your article will be."
+            "Please tell us what position you will be taking on that topic, or what the main point of your article will be."
           )
         }
 
