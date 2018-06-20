@@ -1,0 +1,63 @@
+---
+title: Welcome
+---
+
+.row
+  .col-md-8
+    %h1 Welcome
+
+    :markdown
+      Game Wrap is a yearly publication focusing on the art and craft of live action roleplaying games. We hope to allow for a more fluid exchange of ideas and experience, and wider opportunities for learning from each other.
+
+      Game Wrap is released online in HTML and PDF formats as well as in hard copy on demand. We publish articles about larp theory and practice - the process of writing and running games as well as playing in them. We also publish analyses of larp as an art form, educational or therapeutic tool, and recreation. We will include one or two full texts of larps in each issue, accompanied by the author’s reflective essay. All forms and traditions of larp are welcome.
+
+    %h3 Volume 2 Is Available!
+
+    %p
+      We're pleased to announce that Game Wrap Volume 2 is now available for online reading, PDF download and hard copy purchase!
+      = link_to 'To read Game Wrap Volume 2, go here.', '/vol2'
+
+    %h3 Now accepting submissions and ideas!
+
+    %p
+      Game Wrap is now accepting submissions of articles and larps for Volume 3!
+      = link_to 'You can submit your article or larp here.', '/submissions'
+
+    %p
+      If you’re not quite ready to submit a proposal, but have an idea for an article that you’d
+      like to run past us, you can
+      = link_to 'send us an idea and we can help you turn it into a proposal.', '/ideas'
+
+  .col-md-4
+    #mc_embed_signup.panel.panel-default{style: "margin-top: 2em"}
+      .panel-body
+        %form#mc-embedded-subscribe-form.validate.form{action: "//interconlarp.us1.list-manage.com/subscribe/post?u=5e60a19a38b901e64d8066279&amp;id=d186505bb6", method: "post", name: "mc-embedded-subscribe-form", target: "_blank", novalidate: true}
+          #mc_embed_signup_scroll
+          %h4{style: "margin-top: 0"} Subscribe to our mailing list!
+          %p
+            If you'd like to be notified about upcoming issues and other news from Game Wrap, please subscribe to our mailing list by filling out the form below.
+          .row
+            .col-sm-6
+              .mc-field-group.form-group
+                %label{for: "mce-FNAME"} First Name
+                %input#mce-FNAME.form-control{type: "text", value: "", name: "FNAME"}
+            .col-sm-6
+              .mc-field-group.form-group
+                %label{for: "mce-LNAME"} Last Name
+                %input#mce-LNAME.form-control{type: "text", value: "", name: "LNAME"}
+          .mc-field-group.form-group
+            %label{for: "mce-EMAIL"} Email Address
+            %input#mce-EMAIL.form-control.required.email{type: "email", value: "", name: "EMAIL"}
+          #mce-responses.clear
+            #mce-error-response.response.alert-danger{style: 'display: none'}
+            #mce-success-response.response.alert-success{style: 'display: none'}
+          %div{style: "position: absolute; left: -5000px;", 'aria-hidden' => "true"}
+            %input{type: "text", name: "b_5e60a19a38b901e64d8066279_d186505bb6", tabindex: "-1", value: ""}
+          .clear
+            %input#mc-embedded-subscribe.button.btn.btn-primary{type: 'submit', value: 'Subscribe', name: 'subscribe'}
+
+%hr
+
+Game Wrap is a publication of
+= succeed '.' do
+  = link_to 'New England Interactive Literature', 'http://www.interactiveliterature.org'
