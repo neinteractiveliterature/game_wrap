@@ -95,12 +95,12 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
-activate :deploy do |deploy|
-  deploy.deploy_method = :rsync
-  deploy.host   = 'deploy@vps1.interconlarp.org'
-  deploy.path   = '/var/www/gamewrap.interactiveliterature.org'
-  # Optional Settings
-  # deploy.port  = 5309 # ssh port, default: 22
-  # deploy.clean = true # remove orphaned files on remote host, default: false
-  # deploy.flags = '-rltgoDvzO --no-p --del' # add custom flags, default: -avz
+activate :s3_sync do |s3_sync|
+  s3_sync.bucket                     = 'gamewrap.interactiveliterature.org' # The name of the S3 bucket you are targeting. This is globally unique.
+  s3_sync.region                     = 'us-east-1'     # The AWS region for your bucket.
+  s3_sync.aws_access_key_id          = ENV['GAMEWRAP_AWS_ACCESS_KEY_ID']
+  s3_sync.aws_secret_access_key      = ENV['GAMEWRAP_AWS_SECRET_ACCESS_KEY']
+  s3_sync.path_style                 = true
+  s3_sync.index_document             = 'index.html'
+  s3_sync.error_document             = 'error.html'
 end
