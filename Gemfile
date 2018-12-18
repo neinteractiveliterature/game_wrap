@@ -12,8 +12,10 @@ gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
 
 gem 'middleman-autoprefixer'
 gem 'middleman-s3_sync', '~> 4.0'
+gem 'middleman-cdn'
 
 gem "sass"
 gem "bootstrap-sass"
 gem "haml"
 gem "redcarpet", "~> 3.3.0"
+gem 'babel-transpiler'

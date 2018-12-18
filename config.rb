@@ -104,3 +104,12 @@ activate :s3_sync do |s3_sync|
   s3_sync.index_document             = 'index.html'
   s3_sync.error_document             = 'error.html'
 end
+
+activate :cdn do |cdn|
+  cdn.cloudfront = {
+    access_key_id: ENV['GAMEWRAP_AWS_ACCESS_KEY_ID'],
+    secret_access_key: ENV['GAMEWRAP_AWS_SECRET_ACCESS_KEY'],
+    distribution_id: 'E54CA6RGBP7HW'
+  }
+  cdn.after_build = true
+end
