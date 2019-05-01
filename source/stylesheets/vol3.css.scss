@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+@import "colors";
+@import "fonts";
+@import "mixins";
+
+$vol3-brick: #DC4F26;
+$vol3-canary: #F6EAAA;
+$vol3-brown: #5B100C;
+
+$body-bg: desaturate(lighten($vol3-canary, 9%), 20%);
+$navbar-default-bg: $vol3-brown;
+$navbar-default-link-color: $body-bg;
+$navbar-default-link-active-color: $navbar-default-link-color;
+$navbar-default-link-hover-color: $vol3-brick;
+$navbar-default-color: $navbar-default-link-color;
+$hr-border: #333;
+
+$brand-danger: $vol3-brick;
+
+$font-family-serif: "Gentium Book Basic", Hoefler Text, Georgia, Times New Roman, Times, serif;
+$font-family-base: $font-family-serif;
+$font-size-base: 17px;
+
+$blockquote-font-size: $font-size-base;
+
+$headings-font-family: "Raleway";
+
+@import "bootstrap-custom";
+@import "sidebar";
+@import "littlefoot/littlefoot";
+
+@import "book_common";
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-default .logo-text {
+  color: white;
+  text-shadow: 3px 3px 0 $vol3-brick;
+}
+
+// .the-asylum-game-paper-airplane {
+//   background-image: url(/vol2/images/the-asylum-game-paper-airplane.jpg);
+//   width: 100%;
+//   height: 400px;
+//   max-height: 50vh;
+//   background-position: center;
+//   background-size: cover;
+// }
+
+img.text-clip {
+  &.gender-swap-logo {
+    width: 60%;
+    float: right;
+    margin-right: -10%;
+    shape-outside: image-url('/vol3/images/gender-swap-logo.svg');
+  }
+}
