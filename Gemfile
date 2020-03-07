@@ -19,3 +19,5 @@ gem "bootstrap-sass"
 gem "haml"
 gem "redcarpet", "~> 3.3.0"
 gem 'babel-transpiler'
+gem 'aws-sdk-core'
+gem 'pry'
