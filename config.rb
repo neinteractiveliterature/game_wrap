@@ -41,14 +41,14 @@
 # end
 
 activate :directory_indexes do
-  page "/submit-abstract.php", :directory_index => false
+  page "/submit-abstract.php", directory_index: false
 end
 
 activate :external_pipeline,
-  name: :webpack,
-  command: build? ? "npm run build" : "npm start",
-  source: ".tmp/dist",
-  latency: 1
+         name: :webpack,
+         command: build? ? "npm run build" : "npm start",
+         source: ".tmp/dist",
+         latency: 1
 
 # Methods defined in the helpers block are available in templates
 helpers do
@@ -71,12 +71,12 @@ helpers do
   end
 end
 
-set :css_dir, 'stylesheets'
+set :css_dir, "stylesheets"
 
-set :images_dir, 'images'
+set :images_dir, "images"
 
 set :markdown_engine, :redcarpet
-set :markdown, :footnotes => true, :smartypants => true, :autolink => true, :superscript => true, :fenced_code_blocks => true
+set :markdown, footnotes: true, smartypants: true, autolink: true, superscript: true, fenced_code_blocks: true
 
 activate :autoprefixer
 
@@ -95,23 +95,23 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
-aws_creds = Aws::SharedCredentials.new(profile_name: 'neil').credentials
+aws_creds = Aws::SharedCredentials.new(profile_name: "neil").credentials
 
 activate :s3_sync do |s3_sync|
-  s3_sync.bucket                     = 'gamewrap.interactiveliterature.org' # The name of the S3 bucket you are targeting. This is globally unique.
-  s3_sync.region                     = 'us-east-1'     # The AWS region for your bucket.
-  s3_sync.aws_access_key_id          = aws_creds.access_key_id
-  s3_sync.aws_secret_access_key      = aws_creds.secret_access_key
-  s3_sync.path_style                 = true
-  s3_sync.index_document             = 'index.html'
-  s3_sync.error_document             = 'error.html'
+  s3_sync.bucket = "gamewrap.interactiveliterature.org" # The name of the S3 bucket you are targeting. This is globally unique.
+  s3_sync.region = "us-east-1" # The AWS region for your bucket.
+  s3_sync.aws_access_key_id = aws_creds.access_key_id
+  s3_sync.aws_secret_access_key = aws_creds.secret_access_key
+  s3_sync.path_style = true
+  s3_sync.index_document = "index.html"
+  s3_sync.error_document = "error.html"
 end
 
 activate :cdn do |cdn|
   cdn.cloudfront = {
     access_key_id: aws_creds.access_key_id,
     secret_access_key: aws_creds.secret_access_key,
-    distribution_id: 'E54CA6RGBP7HW'
+    distribution_id: "E54CA6RGBP7HW"
   }
   cdn.after_build = true
 end
