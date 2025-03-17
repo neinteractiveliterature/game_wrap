@@ -24,6 +24,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           cache: "npm"
+          node-version-file: ".node-version"
 
       - name: Install JS dependencies
         run: npm install --legacy-peer-deps
