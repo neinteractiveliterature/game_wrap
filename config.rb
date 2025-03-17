@@ -95,23 +95,23 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
-aws_creds = Aws::SharedCredentials.new(profile_name: "neil").credentials
+# aws_creds = Aws::SharedCredentials.new(profile_name: "neil").credentials
 
-activate :s3_sync do |s3_sync|
-  s3_sync.bucket = "gamewrap.interactiveliterature.org" # The name of the S3 bucket you are targeting. This is globally unique.
-  s3_sync.region = "us-east-1" # The AWS region for your bucket.
-  s3_sync.aws_access_key_id = aws_creds.access_key_id
-  s3_sync.aws_secret_access_key = aws_creds.secret_access_key
-  s3_sync.path_style = true
-  s3_sync.index_document = "index.html"
-  s3_sync.error_document = "error.html"
-end
+# activate :s3_sync do |s3_sync|
+#   s3_sync.bucket = "gamewrap.interactiveliterature.org" # The name of the S3 bucket you are targeting. This is globally unique.
+#   s3_sync.region = "us-east-1" # The AWS region for your bucket.
+#   s3_sync.aws_access_key_id = aws_creds.access_key_id
+#   s3_sync.aws_secret_access_key = aws_creds.secret_access_key
+#   s3_sync.path_style = true
+#   s3_sync.index_document = "index.html"
+#   s3_sync.error_document = "error.html"
+# end
 
-activate :cdn do |cdn|
-  cdn.cloudfront = {
-    access_key_id: aws_creds.access_key_id,
-    secret_access_key: aws_creds.secret_access_key,
-    distribution_id: "E54CA6RGBP7HW"
-  }
-  cdn.after_build = true
-end
+# activate :cdn do |cdn|
+#   cdn.cloudfront = {
+#     access_key_id: aws_creds.access_key_id,
+#     secret_access_key: aws_creds.secret_access_key,
+#     distribution_id: "E54CA6RGBP7HW"
+#   }
+#   cdn.after_build = true
+# end

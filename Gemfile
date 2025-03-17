@@ -11,8 +11,8 @@ gem "wdm", "~> 0.1.0", platforms: %i[mswin mingw]
 gem "tzinfo-data", platforms: %i[mswin mingw jruby]
 
 gem "middleman-autoprefixer"
-gem "middleman-s3_sync", github: "fredjean/middleman-s3_sync"
-gem "middleman-cdn"
+# gem "middleman-s3_sync", github: "fredjean/middleman-s3_sync"
+# gem "middleman-cdn"
 
 gem "sass"
 gem "bootstrap-sass"

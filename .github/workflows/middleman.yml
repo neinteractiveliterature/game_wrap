@@ -1,0 +1,46 @@
+name: Middleman Build
+
+on:
+  push: {}
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  id-token: write # needed for configure-aws-credentials
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-region: us-east-1
+          role-to-assume: arn:aws:iam::689053117832:role/gamewrap_deploy
+
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          cache: "npm"
+          node-version-file: ".node-version"
+
+      - name: Install JS dependencies
+        run: npm install --legacy-peer-deps
+
+      - name: Build Middleman site
+        run: bundle exec middleman build
+
+      - name: Deploy to S3
+        if: github.event.ref == 'refs/heads/main'
+        run: aws s3 sync ./build/ s3://gamewrap.interactiveliterature.org/ --delete --acl public-read
