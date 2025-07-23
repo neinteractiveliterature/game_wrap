@@ -2,24 +2,22 @@
 import "../stylesheets/all.css.scss";
 import NavbarItem from "../components/NavbarItem.astro";
 import { Font } from "astro:assets";
+import FrontendUJS from "../components/FrontendUJS.astro";
 
 interface Props {
   pageTitle?: string;
-  pageDescription?: string;
   pageClasses?: string;
 }
 
-const { pageTitle, pageDescription, pageClasses } = Astro.props;
+const { pageTitle, pageClasses } = Astro.props;
 const titleContent = (pageTitle ? `${pageTitle} – ` : "") + "Game Wrap";
 ---
 
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8" /><meta
-      content="IE='edge,chrome=1"
-      http-equiv="X-UA-Compatible"
-    />
+    <meta charset="utf-8" />
+    <meta content="IE='edge,chrome=1" http-equiv="X-UA-Compatible" />
     <meta
       name="viewport"
       content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
@@ -28,8 +26,8 @@ const titleContent = (pageTitle ? `${pageTitle} – ` : "") + "Game Wrap";
       {titleContent}
     </title>
     <Font cssVariable="--font-tex-gyre-pagella" preload />
-    <Font cssVariable="--font-metro" />
-    <Font cssVariable="--font-gentium-book-basic" />
+    <Font cssVariable="--font-metro" preload />
+    <FrontendUJS />
   </head>
   <body class={pageClasses}>
     <div class="jumbotron hidden-xs">

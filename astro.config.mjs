@@ -48,6 +48,17 @@ export default defineConfig({
   //     }),
   //   },
   // },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          // can't get import to work until Bootstrap supports it
+          silenceDeprecations: ["import", "legacy-js-api"],
+          quietDeps: true,
+        },
+      },
+    },
+  },
   experimental: {
     fonts: [
       {
@@ -138,6 +149,43 @@ export default defineConfig({
               "./src/assets/fonts/genbkbasbi.ttf",
             ],
             weight: "bold",
+            style: "italic",
+          },
+        ],
+      },
+      {
+        provider: "local",
+        name: "Raleway",
+        cssVariable: "--font-raleway",
+        variants: [
+          {
+            src: [
+              "./src/assets/fonts/raleway-regular-webfont.woff2",
+              "./src/assets/fonts/raleway-regular-webfont.woff",
+              "./src/assets/fonts/Raleway-Regular.ttf",
+            ],
+          },
+          {
+            src: [
+              "./src/assets/fonts/raleway-italic-webfont.woff2",
+              "./src/assets/fonts/raleway-italic-webfont.woff",
+              "./src/assets/fonts/Raleway-Italic.ttf",
+            ],
+            style: "italic",
+          },
+        ],
+      },
+      {
+        provider: "local",
+        name: "Raleway Light",
+        cssVariable: "--font-raleway-light",
+        variants: [
+          {
+            src: [
+              "./src/assets/fonts/raleway-lightitalic-webfont.woff2",
+              "./src/assets/fonts/raleway-lightitalic-webfont.woff",
+              "./src/assets/fonts/Raleway-LightItalic.ttf",
+            ],
             style: "italic",
           },
         ],
