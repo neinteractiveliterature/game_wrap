@@ -1,19 +1,21 @@
 // @ts-check
 import { defineConfig, envField } from "astro/config";
 
+import mdx from "@astrojs/mdx";
+
 // https://astro.build/config
 export default defineConfig({
   // adapter: aws(),
-  // integrations: [
+
+  integrations: [mdx()],
   //   favicons({
   //     name: "New England Interactive Literature",
   //     short_name: "NEIL",
   //     input: "src/assets/cropped-neilSquare.png",
   //   }),
-  //   mdx(),
   //   react(),
   //   pagefind(),
-  // ],
+
   // env: {
   //   schema: {
   //     AKISMET_API_KEY: envField.string({
@@ -59,6 +61,7 @@ export default defineConfig({
       },
     },
   },
+
   experimental: {
     fonts: [
       {

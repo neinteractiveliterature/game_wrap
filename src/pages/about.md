@@ -1,5 +1,6 @@
 ---
 title: About Us
+layout: ../layouts/MainLayout.astro
 ---
 
 # About Us
