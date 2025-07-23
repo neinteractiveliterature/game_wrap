@@ -1,0 +1,92 @@
+---
+import "../stylesheets/all.css.scss";
+import NavbarItem from "../components/NavbarItem.astro";
+import { Font } from "astro:assets";
+
+interface Props {
+  pageTitle?: string;
+  pageDescription?: string;
+  pageClasses?: string;
+}
+
+const { pageTitle, pageDescription, pageClasses } = Astro.props;
+const titleContent = (pageTitle ? `${pageTitle} – ` : "") + "Game Wrap";
+---
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" /><meta
+      content="IE='edge,chrome=1"
+      http-equiv="X-UA-Compatible"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <title>
+      {titleContent}
+    </title>
+    <Font cssVariable="--font-tex-gyre-pagella" preload />
+    <Font cssVariable="--font-metro" />
+    <Font cssVariable="--font-gentium-book-basic" />
+  </head>
+  <body class={pageClasses}>
+    <div class="jumbotron hidden-xs">
+      <h1 id="header">
+        <div class="fittext logo-text">Game Wrap</div>
+      </h1>
+    </div>
+    <nav class="navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            class="navbar-toggle collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#main-navbar-collapse"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a
+            class="navbar-brand visible-xs-inline"
+            href="/"
+            style="width: 100%; max-width: 300px;"
+          >
+            <div class="logo-text fittext">Game Wrap</div>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="main-navbar-collapse">
+          <ul class="nav navbar-nav">
+            <NavbarItem url="/">Home</NavbarItem>
+            <NavbarItem url="/submissions">Submissions</NavbarItem>
+            <NavbarItem url="/ideas">Ideas</NavbarItem>
+            <NavbarItem url="/about">About Us</NavbarItem>
+            <li class="dropdown">
+              <a
+                class="dropdown-toggle"
+                href="#"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup
+                aria-expanded={false}
+              >
+                Volumes
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <NavbarItem url="/vol1">Volume 1</NavbarItem>
+                <NavbarItem url="/vol2">Volume 2</NavbarItem>
+                <NavbarItem url="/vol3">Volume 3</NavbarItem>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container"><slot /></div>
+  </body>
+</html>
