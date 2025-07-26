@@ -1,5 +1,5 @@
 ---
-layout: vol1
+layout: "../../layouts/Vol1Layout.astro"
 content_type: text/html
 title: "Writing Process, Written Product: Outside-In vs. Inside-Out Larp Design"
 ---

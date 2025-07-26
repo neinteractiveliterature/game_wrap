@@ -1,5 +1,5 @@
 ---
-layout: vol1
+layout: "../../layouts/Vol1Layout.astro"
 content_type: text/html
 title: "Running Out of the Box: How to Produce a Pre-Written Theatre-Style Larp"
 ---

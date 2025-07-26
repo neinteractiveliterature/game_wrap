@@ -1,5 +1,5 @@
 ---
-layout: vol1
+layout: "../../layouts/Vol1Layout.astro"
 content_type: text/html
 title: "Smile and Smile and Be a Villain: Supporting the Narrative Function of Villain Roles in Larp"
 ---

@@ -1,5 +1,5 @@
 ---
-layout: vol1
+layout: "../../layouts/Vol1Layout.astro"
 content_type: text/html
 title: "A Time to (Not) Kill: An Examination of the Institution of “Kill Moratoriums,” Their Use, and Alternatives in the Craft of LARP"
 ---
@@ -165,8 +165,8 @@ So, which options are used most often, and which option is best for your
 game? Indeed, in the process of writing this article, I became curious
 about how prevalent kill moratoriums were in the realm of theater-style
 one-shot LARPs. I went back though my own notes and materials from ten
-years of LARPing and tried to identify whether each game I had played in
-1) had a kill moratorium, 2) did not have a kill moratorium, or 3)
+years of LARPing and tried to identify whether each game I had played in 1)
+had a kill moratorium, 2) did not have a kill moratorium, or 3)
 lacked any rules for killing other characters or explicitly stated that
 character death was not possible. Naturally, I acknowledge that this
 sample is haphazard and reflective of my own tastes and opportunities in

@@ -1,5 +1,5 @@
 ---
-layout: vol1
+layout: "../../layouts/Vol1Layout.astro"
 content_type: text/html
 title: "Designing a Larp for Educational Purposes: Learning Process and Communication in Graveyard of the Sacrifice"
 ---
