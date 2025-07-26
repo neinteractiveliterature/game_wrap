@@ -1,5 +1,5 @@
 ---
-layout: vol2
+layout: "../../layouts/Vol2Layout.astro"
 content_type: text/html
 title: "No Battle Plan Survives Contact With the Enemy: The Tension Between Narrative Structure and Player Autonomy in Larp"
 ---

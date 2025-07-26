@@ -1,5 +1,5 @@
 ---
-layout: vol2
+layout: "../../layouts/Vol2Layout.astro"
 content_type: text/html
 title: "From Bad to Better: Larp Design Lessons from 10 Bad LARPs"
 ---

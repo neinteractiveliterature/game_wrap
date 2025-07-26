@@ -118,7 +118,7 @@ body {
 }
 
 .article-title {
-  font-family: Raleway;
+  font-family: var(--font-raleway);
   font-size: ($font-size-h3 + $font-size-h4) / 2;
   line-height: ($font-size-h3 + $font-size-h4) / 2;
 
@@ -207,7 +207,7 @@ body {
 }
 
 .pull-quote {
-  font-family: Raleway Light;
+  font-family: var(--font-raleway-light);
   font-size: ($font-size-h3 * 0.9);
   font-style: italic;
   width: calc(100% - 40px);

@@ -82,6 +82,13 @@ export default defineConfig({
         provider: "local",
         name: "TeX Gyre Pagella",
         cssVariable: "--font-tex-gyre-pagella",
+        fallbacks: [
+          "Hoefler Text",
+          "Georgia",
+          "Times New Roman",
+          "Times",
+          "serif",
+        ],
         variants: [
           {
             src: [
@@ -121,6 +128,13 @@ export default defineConfig({
         provider: "local",
         name: "Gentium Book Basic",
         cssVariable: "--font-gentium-book-basic",
+        fallbacks: [
+          "Hoefler Text",
+          "Georgia",
+          "Times New Roman",
+          "Times",
+          "serif",
+        ],
         variants: [
           {
             src: [

@@ -10,7 +10,7 @@ $navbar-default-link-color: $body-bg;
 $navbar-default-link-active-color: $navbar-default-link-color;
 $navbar-default-link-hover-color: $mustard;
 
-$font-family-serif: "TeX Gyre Pagella", Hoefler Text, Georgia, Times New Roman, Times, serif;
+$font-family-serif: var(--font-tex-gyre-pagella);
 $font-family-base: $font-family-serif;
 $font-size-base: 17px;
 

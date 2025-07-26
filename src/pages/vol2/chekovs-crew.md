@@ -1,5 +1,5 @@
 ---
-layout: vol2
+layout: "../../layouts/Vol2Layout.astro"
 content_type: text/html
 title: "Chekov’s Crew: The use of adjunct crew in theatre-style larps"
 ---

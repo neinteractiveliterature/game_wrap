@@ -1,5 +1,5 @@
 ---
-layout: vol2
+layout: "../../layouts/Vol2Layout.astro"
 content_type: text/html
 title: "Collaboratively Written Characters and Their Role in Creating a Successful Larp"
 ---

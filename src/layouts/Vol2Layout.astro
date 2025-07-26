@@ -1,11 +1,11 @@
 ---
-import "../stylesheets/vol1.css.scss";
+import "../stylesheets/vol2.css.scss";
 import "littlefoot/dist/littlefoot.css";
 import NavbarItem from "../components/NavbarItem.astro";
 import { Font } from "astro:assets";
 import FrontendUJS from "../components/FrontendUJS.astro";
-import Vol1Editions from "./Vol1Editions.astro";
-import Vol1Navbar from "./Vol1Navbar.astro";
+import Vol2Editions from "./Vol2Editions.astro";
+import Vol2Navbar from "./Vol2Navbar.astro";
 
 interface Props {
   pageTitle?: string;
@@ -14,7 +14,7 @@ interface Props {
 
 const { pageTitle, pageClasses } = Astro.props;
 const titleContent =
-  (pageTitle ? `${pageTitle} – ` : "") + "Game Wrap Volume 1";
+  (pageTitle ? `${pageTitle} – ` : "") + "Game Wrap Volume 2";
 ---
 
 <!doctype html>
@@ -53,7 +53,7 @@ const titleContent =
 
           <a
             class="navbar-brand"
-            href="/vol1"
+            href="/vol2"
             style="width: 100%; min-width: 200px; max-width: 300px; text-align: center;"
           >
             <div style="max-width: 200px; width: 100%; display: inline-block;">
@@ -61,17 +61,17 @@ const titleContent =
                 Game Wrap
               </div>
               <div class="fittext text-center" style="line-height: 100%">
-                Volume 1
+                Volume 2
               </div>
             </div>
           </a>
         </div>
 
         <div class="collapse navbar-collapse" id="main-navbar-collapse">
-          <Vol1Editions />
+          <Vol2Editions />
 
           <ul class="nav navbar-nav">
-            <Vol1Navbar />
+            <Vol2Navbar />
 
             <hr />
             <NavbarItem url="/">Return to Game Wrap site</NavbarItem>
@@ -79,6 +79,8 @@ const titleContent =
         </div>
       </div>
     </nav>
+
+    <slot name="pre-content" />
 
     <div class="content-container">
       <slot />

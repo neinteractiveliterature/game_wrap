@@ -1,5 +1,5 @@
 ---
-layout: vol2
+layout: "../../layouts/Vol2Layout.astro"
 content_type: text/html
 title: "Consensus RPG"
 columns: false
