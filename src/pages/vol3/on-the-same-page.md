@@ -1,5 +1,5 @@
 ---
-layout: vol3
+layout: "../../layouts/Vol3Layout.astro"
 content_type: text/html
 title: "On the Same Page: A GM’s Guide to Creating Successful Relationship Plots"
 ---

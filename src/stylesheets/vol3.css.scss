@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 @import "colors";
-@import "fonts";
 @import "mixins";
 
 $vol3-brick: #DC4F26;
@@ -39,15 +38,6 @@ $headings-font-family: var(--font-raleway);
   color: white;
   text-shadow: 3px 3px 0 $vol3-brick;
 }
-
-// .the-asylum-game-paper-airplane {
-//   background-image: url(/vol2/images/the-asylum-game-paper-airplane.jpg);
-//   width: 100%;
-//   height: 400px;
-//   max-height: 50vh;
-//   background-position: center;
-//   background-size: cover;
-// }
 
 img.text-clip {
   &.gender-swap-logo {

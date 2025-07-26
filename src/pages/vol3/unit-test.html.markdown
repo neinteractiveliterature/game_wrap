@@ -1,5 +1,5 @@
 ---
-layout: vol3
+layout: "../../layouts/Vol3Layout.astro"
 content_type: text/html
 title: "Unit Test: A game for three people for about an hour."
 ---

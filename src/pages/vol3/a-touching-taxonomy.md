@@ -1,5 +1,5 @@
 ---
-layout: vol3
+layout: "../../layouts/Vol3Layout.astro"
 content_type: text/html
 title: "A Touching Taxonomy"
 ---
