@@ -1,7 +1,10 @@
-name: Middleman Build
+name: Deploy
 
 on:
-  push: {}
+  push:
+    branches:
+      - main
+      - astro
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
@@ -24,23 +27,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          bundler-cache: true
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          cache: "npm"
-          node-version-file: ".node-version"
+          cache: "yarn"
 
       - name: Install JS dependencies
-        run: npm install --legacy-peer-deps
+        run: yarn install
 
-      - name: Build Middleman site
-        run: bundle exec middleman build
-
-      - name: Deploy to S3
-        if: github.ref == 'refs/heads/main'
-        run: aws s3 sync ./build/ s3://gamewrap.interactiveliterature.org/ --delete --acl public-read
+      - run: yarn run sst deploy --stage=production
+        working-directory: astro
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}

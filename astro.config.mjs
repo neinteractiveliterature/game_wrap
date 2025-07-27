@@ -1,55 +1,14 @@
 // @ts-check
 import { defineConfig, envField } from "astro/config";
+import aws from "astro-sst";
 
 import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-  // adapter: aws(),
-
+  adapter: aws(),
   integrations: [mdx()],
-  //   favicons({
-  //     name: "New England Interactive Literature",
-  //     short_name: "NEIL",
-  //     input: "src/assets/cropped-neilSquare.png",
-  //   }),
-  //   react(),
-  //   pagefind(),
 
-  // env: {
-  //   schema: {
-  //     AKISMET_API_KEY: envField.string({
-  //       access: "secret",
-  //       context: "server",
-  //       optional: false,
-  //     }),
-  //     CONTACT_FORM_EMAIL_TO: envField.string({
-  //       access: "secret",
-  //       context: "server",
-  //       optional: true,
-  //     }),
-  //     DATABASE_URL: envField.string({
-  //       access: "secret",
-  //       context: "server",
-  //       optional: false,
-  //     }),
-  //     SMTP_URL: envField.string({
-  //       access: "secret",
-  //       context: "server",
-  //       optional: true,
-  //     }),
-  //     GITHUB_OAUTH_ID: envField.string({
-  //       access: "secret",
-  //       context: "server",
-  //       optional: false,
-  //     }),
-  //     GITHUB_OAUTH_SECRET: envField.string({
-  //       access: "secret",
-  //       context: "server",
-  //       optional: false,
-  //     }),
-  //   },
-  // },
   vite: {
     css: {
       preprocessorOptions: {

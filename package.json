@@ -1,33 +1,29 @@
 {
-  "name": "game_wrap_frontend",
+  "name": "game-wrap",
   "version": "1.0.0",
   "description": "",
-  "main": "./source/javascripts/index.js",
   "scripts": {
-    "dev": "astro dev",
     "build": "astro build",
+    "dev": "astro dev",
     "preview": "astro preview"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@vps1.interconlarp.org:game_wrap.git"
   },
   "author": "Nat Budin",
   "license": "UNLICENSED",
   "devDependencies": {
+    "esbuild": "^0.25.8",
     "prettier": "^3.6.2",
-    "react": "^15.0.2",
-    "react-addons-update": "^15.0.2",
-    "react-dom": "^15.0.2",
+    "sharp": "^0.34.3",
     "typescript": "^5.8.3"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.1",
     "astro": "^5.12.3",
+    "astro-sst": "3.1.4",
     "bootstrap-sass": "^3.4.1",
     "bootstrap.native": "^1.0.2",
     "littlefoot": "^1.0.0-alpha.14",
-    "sass-embedded": "^1.89.2"
+    "sass-embedded": "^1.89.2",
+    "sst": "3.17.10"
   },
   "packageManager": "yarn@4.9.2"
 }
