@@ -24,7 +24,7 @@ jobs:
           role-to-assume: arn:aws:iam::689053117832:role/gamewrap_deploy
 
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
