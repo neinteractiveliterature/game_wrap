@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+@import "colors";
+@import "mixins";
+
+$vol3-brick: #DC4F26;
+$vol3-canary: #F6EAAA;
+$vol3-brown: #5B100C;
+
+$body-bg: desaturate(lighten($vol3-canary, 9%), 20%);
+$navbar-default-bg: $vol3-brown;
+$navbar-default-link-color: $body-bg;
+$navbar-default-link-active-color: $navbar-default-link-color;
+$navbar-default-link-hover-color: $vol3-brick;
+$navbar-default-color: $navbar-default-link-color;
+$hr-border: #333;
+
+$brand-danger: $vol3-brick;
+
+$font-family-serif: var(--font-gentium-book-basic);
+$font-family-base: $font-family-serif;
+$font-size-base: 17px;
+
+$blockquote-font-size: $font-size-base;
+
+$headings-font-family: var(--font-raleway);
+
+@import "bootstrap-custom";
+@import "sidebar";
+
+@import "book_common";
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-default .logo-text {
+  color: white;
+  text-shadow: 3px 3px 0 $vol3-brick;
+}
+
+img.text-clip {
+  &.gender-swap-logo {
+    width: 60%;
+    float: right;
+    margin-right: -10%;
+    shape-outside: image-url('/vol3/images/gender-swap-logo.svg');
+  }
+}

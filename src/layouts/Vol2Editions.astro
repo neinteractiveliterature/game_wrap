@@ -1,0 +1,34 @@
+---
+import { Image } from "astro:assets";
+import BookIcon from "../assets/vol2/book-icon.png";
+import PdfIcon from "../assets/vol1/Pdf_by_mimooh.svg";
+---
+
+<p class="text-center" style="margin-bottom: 30px; margin-top: 30px;">
+  <a
+    href="https://www.lulu.com/shop/new-england-interactive-literature/game-wrap-volume-2/paperback/product-1wrw67pv.html"
+    class="btn btn-danger"
+    style="position: relative; padding-right: 56px;"
+  >
+    <Image
+      src={BookIcon}
+      alt="Print edition"
+      style="position: absolute; right: 5px; top: -10px; width: auto; height: 56px;"
+    />
+    Buy the print edition
+  </a>
+</p>
+<p class="text-center" style="margin-bottom: 30px">
+  <a
+    href="/vol2/GameWrapVol2.pdf"
+    class="btn btn-danger"
+    style="position: relative; padding-left: 56px;"
+  >
+    <Image
+      src={PdfIcon}
+      alt="PDF icon by Mimooh (CC BY-SA 3.0)"
+      style="position: absolute; left: -6px; top: -10px; width: auto; height: 56px;"
+    />
+    Download the PDF
+  </a>
+</p>

@@ -1,0 +1,18 @@
+---
+
+---
+
+<script>
+  import fitText from "./fittext";
+  import "bootstrap.native";
+  import Littlefoot from "littlefoot";
+
+  document.addEventListener("DOMContentLoaded", function (event) {
+    Littlefoot();
+
+    const fitTextElements = document.getElementsByClassName("fittext");
+    for (let i = 0; i < fitTextElements.length; i++) {
+      fitText(fitTextElements[i], 1.1);
+    }
+  });
+</script>

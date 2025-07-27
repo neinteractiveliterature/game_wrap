@@ -1,0 +1,12 @@
+---
+interface Props {
+  url: string;
+}
+
+const { url } = Astro.props;
+const isCurrent = new URL(url, Astro.url).toString() === Astro.url.toString();
+---
+
+<li class={isCurrent ? "active" : undefined}>
+  <a href={url}><slot /></a>
+</li>

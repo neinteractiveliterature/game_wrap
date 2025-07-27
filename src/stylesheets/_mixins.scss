@@ -1,0 +1,14 @@
+.logo-text {
+  font-family: var(--font-metro);
+  font-weight: normal;
+
+  text-align: center;
+
+  .navbar-default &, .jumbotron & {
+    color: $mustard;
+  }
+}
+
+.page-break-before {
+  break-before: page;
+}

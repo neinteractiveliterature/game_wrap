@@ -1,0 +1,102 @@
+---
+import { Image } from "astro:assets";
+import Vol3Layout from "../../layouts/Vol3Layout.astro";
+import CcLogo from "../../assets/vol1/cc.logo.svg";
+import Vol3Navbar from "../../layouts/Vol3Navbar.astro";
+---
+
+<Vol3Layout>
+  <header style="margin-bottom: 40px">
+    <div class="topline-widget">
+      <div class="left"></div>
+      <div class="center"></div>
+      <div class="right"></div>
+    </div>
+    <div class="logo-text fittext">Game Wrap</div>
+  </header>
+  <div class="visible-xs-block">
+    <div class="xs-toc">
+      <ul class="nav navbar-nav"><Vol3Navbar /></ul>
+    </div>
+    <hr />
+  </div>
+  <div class="frontmatter">
+    <aside class="credits">
+      <header>
+        <div class="black-square"></div>
+      </header>
+      <section>
+        <h4>Editor in Chief</h4>
+        Viktoriya Fuzaylova
+      </section>
+      <section>
+        <h4>Editorial Board</h4>
+        <ul class="list-unstyled">
+          <li>Viktoriya Fuzaylova</li>
+          <li>Stephen Kohler</li>
+          <li>Brian Richburg</li>
+          <li>Phoebe Roberts</li>
+          <li>Adina Schreiber</li>
+        </ul>
+      </section>
+      <section>
+        <h4>Author Liaison</h4>
+        Brian Richburg
+      </section>
+      <section>
+        <h4>Layout Designer</h4>
+        Kathleen De Smet
+      </section>
+      <section>
+        <h4>Webmaster</h4>
+        Nat Budin
+      </section>
+      <footer>
+        <div class="black-square"></div>
+      </footer>
+    </aside>
+    <div class="copyright">
+      <p>
+        Game Wrap Volume 3 is Copyright &copy; 2019 by New England Interactive
+        Literature. Copyrights to individual articles and larps herein remain
+        with their respective authors.
+      </p>
+      <p>
+        This work is licensed under the Creative Commons Attribution-ShareAlike
+        4.0 International License. To view a copy of this license, visit <a
+          href="http://creativecommons.org/licenses/by-sa/4.0/"
+        >
+          http://creativecommons.org/licenses/by-sa/4.0/
+        </a>.
+      </p>
+      <Image
+        src={CcLogo}
+        alt="Creative Commons"
+        class="img-responsive"
+        style="margin-bottom: 50px"
+      />
+      <p style="margin-top: 50px">
+        New England Interactive Literature
+        <br />
+        c/o Chad Bergeron
+        <br />
+        258 Edgell Road
+        <br />
+        Framingham, MA 01701
+      </p>
+    </div>
+  </div>
+  <footer style="margin-top: 40px">
+    <div class="midline">
+      <div class="midline-line left"></div>
+      <div style="width: 50%">
+        <h3 class="fittext" style="width: 57%">
+          <a href="https://gamewrap.interactiveliterature.org"
+            >https://gamewrap.interactiveliterature.org</a
+          >
+        </h3>
+      </div>
+      <div class="midline-line right"></div>
+    </div>
+  </footer>
+</Vol3Layout>
