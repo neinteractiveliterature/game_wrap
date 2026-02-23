@@ -23,7 +23,7 @@
     "bootstrap.native": "^1.0.2",
     "littlefoot": "^1.0.0-alpha.14",
     "sass-embedded": "^1.89.2",
-    "sst": "3.17.10"
+    "sst": "3.19.3"
   },
   "packageManager": "yarn@4.9.2"
 }
