@@ -1971,52 +1971,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dom-classlist@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "dom-classlist@npm:1.0.1"
-  checksum: 10c0/da6227bcb30757e9ee078c73678c514ca3681d9c54d8edc8e8e11035b6d6179b5b1561f02f5bc73a3f45cde0ff1d32ef12e2f5b45a59258db75cf04608197659
-  languageName: node
-  linkType: hard
-
-"dom-closest@npm:^0.2.0":
-  version: 0.2.0
-  resolution: "dom-closest@npm:0.2.0"
-  dependencies:
-    dom-matches: "npm:>=1.0.1"
-  checksum: 10c0/77956c1f2f260e03ff72eacb3c834f1cd6d6fefc624e804fba1571272528301f3f886f5b1b25e6e72845e0d1c8c785532c53c3510028291c400724e856796292
-  languageName: node
-  linkType: hard
-
-"dom-delegate@npm:^2.0.3":
-  version: 2.2.1
-  resolution: "dom-delegate@npm:2.2.1"
-  checksum: 10c0/9d98e7abc96d6e9e7e7627027dfd5691bea10814be80001cab4120a553e9aabc12c815eba0633f110a884a415e1005b2433b2dbe0895a8ccbcee628764cdfe68
-  languageName: node
-  linkType: hard
-
-"dom-matches@npm:>=1.0.1, dom-matches@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "dom-matches@npm:2.0.0"
-  checksum: 10c0/ec12480e789e7ce26214773a11efd9a91317199ce20408aff2d651058a8b18459f4c7e6032e31ae4df41e71bcc90967b06d57319f6b44d657d5592a67022a5ba
-  languageName: node
-  linkType: hard
-
-"dom-matches@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "dom-matches@npm:1.0.1"
-  checksum: 10c0/9dce728949d56f22282c83498218db6e982b3e3f04e8332780c1f2760c8b4b114a4a2728e25369de2918fbdebda4f19e097a3c5c0c13a4f24158a913b48d93d9
-  languageName: node
-  linkType: hard
-
-"dom-siblings@npm:^0.1.0":
-  version: 0.1.0
-  resolution: "dom-siblings@npm:0.1.0"
-  dependencies:
-    dom-matches: "npm:^1.0.1"
-  checksum: 10c0/5b889fb18a2c1c590fee0d2ec7b3f462a40ec7d8259b1dc8964176e721d7bc788ae53bc8a2857e0f3c037decf68ac8ff052550e82c23912d1ad35ada13bb13e6
-  languageName: node
-  linkType: hard
-
 "dset@npm:^3.1.4":
   version: 3.1.4
   resolution: "dset@npm:3.1.4"
@@ -2579,7 +2533,7 @@ __metadata:
     bootstrap-sass: "npm:^3.4.1"
     bootstrap.native: "npm:^1.0.2"
     esbuild: "npm:^0.25.8"
-    littlefoot: "npm:^1.0.0-alpha.14"
+    littlefoot: "npm:^4.0.0"
     prettier: "npm:^3.6.2"
     sass-embedded: "npm:^1.89.2"
     sharp: "npm:^0.34.3"
@@ -3263,59 +3217,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"littlefoot@npm:^1.0.0-alpha.14":
-  version: 1.0.9
-  resolution: "littlefoot@npm:1.0.9"
-  dependencies:
-    dom-classlist: "npm:^1.0.1"
-    dom-closest: "npm:^0.2.0"
-    dom-delegate: "npm:^2.0.3"
-    dom-matches: "npm:^2.0.0"
-    dom-siblings: "npm:^0.1.0"
-    lodash.escape: "npm:^4.0.1"
-    lodash.template: "npm:^4.4.0"
-    lodash.throttle: "npm:^4.1.1"
-  checksum: 10c0/29e4ed1cb0ece211a63f8375438884e2bef8b35c014e8c6bcbc85925054d9b91c543d5841d21ad0953c46164fcba6cf1feda5d3eb814fafa4a5039cdf148231f
-  languageName: node
-  linkType: hard
-
-"lodash._reinterpolate@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "lodash._reinterpolate@npm:3.0.0"
-  checksum: 10c0/cdf592374b5e9eb6d6290a9a07c7d90f6e632cca4949da2a26ae9897ab13f138f3294fd5e81de3e5d997717f6e26c06747a9ad3413c043fd36c0d87504d97da6
-  languageName: node
-  linkType: hard
-
-"lodash.escape@npm:^4.0.1":
-  version: 4.0.1
-  resolution: "lodash.escape@npm:4.0.1"
-  checksum: 10c0/90ade409cec05b6869090476952fdfb84d4d87b1ff4a0e03ebd590f980d9a1248d93ba14579f10d80c6429e4d6af13ba137c28db64cae6dadb71442e54a3ad2b
-  languageName: node
-  linkType: hard
-
-"lodash.template@npm:^4.4.0":
-  version: 4.5.0
-  resolution: "lodash.template@npm:4.5.0"
-  dependencies:
-    lodash._reinterpolate: "npm:^3.0.0"
-    lodash.templatesettings: "npm:^4.0.0"
-  checksum: 10c0/62a02b397f72542fa9a989d9fc1a94fc1cb94ced8009fa5c37956746c0cf460279e844126c2abfbf7e235fe27e8b7ee8e6efbf6eac247a06aa05b05457fda817
-  languageName: node
-  linkType: hard
-
-"lodash.templatesettings@npm:^4.0.0":
-  version: 4.2.0
-  resolution: "lodash.templatesettings@npm:4.2.0"
-  dependencies:
-    lodash._reinterpolate: "npm:^3.0.0"
-  checksum: 10c0/2609fea36ed061114dfed701666540efc978b069b2106cd819b415759ed281419893d40f85825240197f1a38a98e846f2452e2d31c6d5ccee1e006c9de820622
-  languageName: node
-  linkType: hard
-
-"lodash.throttle@npm:^4.1.1":
-  version: 4.1.1
-  resolution: "lodash.throttle@npm:4.1.1"
-  checksum: 10c0/14628013e9e7f65ac904fc82fd8ecb0e55a9c4c2416434b1dd9cf64ae70a8937f0b15376a39a68248530adc64887ed0fe2b75204b2c9ec3eea1cb2d66ddd125d
+"littlefoot@npm:^4.0.0":
+  version: 4.1.4
+  resolution: "littlefoot@npm:4.1.4"
+  checksum: 10c0/a8bc7e48aed39b72481ccd72b113ad7f81080a84136eb9d65e9edd22e036958686366511ba409d59b0221adbcc82173a2158208d6ec690055702646c4101d780
   languageName: node
   linkType: hard
 
