@@ -1063,6 +1063,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@thednp/event-listener@npm:^2.0.15":
+  version: 2.0.15
+  resolution: "@thednp/event-listener@npm:2.0.15"
+  checksum: 10c0/02ce4402985f72af44049b6557443dd96a47f37301ea2dbc82f009aa56f22d9d5f06b45e4cb07f6c3bc5ff30c0faadd118095212f908b40b9521348aee231c39
+  languageName: node
+  linkType: hard
+
+"@thednp/position-observer@npm:^1.1.3":
+  version: 1.1.6
+  resolution: "@thednp/position-observer@npm:1.1.6"
+  checksum: 10c0/27e1e01456fee8220799faf34f591859c265a377699a873090ac412c9018e9df73f36b72367c8a3907e8806b562d02113566376d318d967c929cd441c7ed38b6
+  languageName: node
+  linkType: hard
+
+"@thednp/shorty@npm:^2.0.14":
+  version: 2.0.14
+  resolution: "@thednp/shorty@npm:2.0.14"
+  checksum: 10c0/72a4ecdbdbeb05953649721f412c1301f950450906fe5914cf4225b83e49f18dc0573f3526aa6efaaff2e442753b5e5b897ed91f5be0792ad4766c3462a0277d
+  languageName: node
+  linkType: hard
+
 "@tsconfig/bun@npm:1.0.7":
   version: 1.0.7
   resolution: "@tsconfig/bun@npm:1.0.7"
@@ -1481,10 +1502,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bootstrap.native@npm:^1.0.2":
-  version: 1.3.0
-  resolution: "bootstrap.native@npm:1.3.0"
-  checksum: 10c0/87b2a7030b8421bc14538732a1b7bb9d92b184dc5654b1e38c801f41252fd902e413119ef0e7f6eab3c9b0342979def8f279dcc3baa5d164fb5c669553e74f1a
+"bootstrap.native@npm:^5.0.0":
+  version: 5.1.10
+  resolution: "bootstrap.native@npm:5.1.10"
+  dependencies:
+    "@thednp/event-listener": "npm:^2.0.15"
+    "@thednp/position-observer": "npm:^1.1.3"
+    "@thednp/shorty": "npm:^2.0.14"
+  checksum: 10c0/6484411fc4ba5b7d1bdd9da039d07efc32c30b5b216b1442cea4ef235b6398b22ccf721b7216258113f8e9cca86558bf6155abb98ebe7ff55a51e4345130e997
   languageName: node
   linkType: hard
 
@@ -2577,7 +2602,7 @@ __metadata:
     astro: "npm:^5.12.3"
     astro-sst: "npm:3.1.4"
     bootstrap-sass: "npm:^3.4.1"
-    bootstrap.native: "npm:^1.0.2"
+    bootstrap.native: "npm:^5.0.0"
     esbuild: "npm:^0.25.8"
     littlefoot: "npm:^1.0.0-alpha.14"
     prettier: "npm:^3.6.2"
