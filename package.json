@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.1",
-    "astro": "^5.12.3",
+    "astro": "^7.0.0",
     "astro-sst": "3.1.4",
     "bootstrap-sass": "^3.4.1",
     "bootstrap.native": "^1.0.2",
